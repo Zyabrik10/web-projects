@@ -1,0 +1,16 @@
+.grid {
+  --grid-items: 3;
+  --grid-items-gap: 25px;
+  --grid-direction: row;
+
+  display: flex;
+  gap: var(--grid-items-gap);
+  flex-wrap: wrap;
+  flex-direction: var(--grid-direction);
+}
+
+.grid > * {
+  flex-basis: calc(
+    (100% - (var(--grid-items) - 1) * var(--grid-items-gap)) / var(--grid-items)
+  );
+}

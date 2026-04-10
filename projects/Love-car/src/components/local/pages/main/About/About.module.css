@@ -1,0 +1,30 @@
+.page-description {
+  --grid-items: 1;
+  --grid-items-gap: 10px;
+
+  justify-content: center;
+}
+
+@media screen and (min-width: 764px) {
+  .page-description {
+    --grid-items: 2;
+    --grid-items-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .page-description {
+    --grid-items-gap: 30px;
+  }
+}
+
+.page-description > li {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--main-sub-color);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

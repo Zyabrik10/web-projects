@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--main-sub-color);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--main-dark-sub-color);
+}

@@ -1,0 +1,25 @@
+@import url('css/reset-normalize.css');
+
+body {
+  color: var(--main-text-color);
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-sub-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-dark-sub-color);
+}

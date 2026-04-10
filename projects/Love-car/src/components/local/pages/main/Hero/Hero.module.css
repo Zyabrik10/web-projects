@@ -1,0 +1,19 @@
+.hero {
+  background: rgba(200, 200, 200, 0.1);
+}
+
+.hero-container {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.hero-description {
+  width: 100%;
+  max-width: 600px;
+}

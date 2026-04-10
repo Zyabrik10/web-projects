@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  font: 1em sans-serif;
+  background-image: url(images/cosmos.jpg);
+  /*background-size: cover; это чтобы картинка не растягивалась  на 100% а была нормальной*/ 
+}
+.Earth{
+	width: 300px;
+	padding: 100px;
+	/*outline: 1px solid #ccc; - делает обводку*/
+	position: relative;
+	z-index: 1;/* это прячет нашу луну то есть наша земля на первом плане*/
+	animation: earth 60s linear 2s infinite normal;
+	left: 400px;
+	-webkit-animation: earth 60s linear 2s infinite normal;
+}
+.moon{
+	position: absolute;
+	top: 170px;
+	left: 170px;
+	animation: orbita 20s linear 2s infinite normal;
+	z-index: 0;/* то что на наша луна на заднем плане*/
+	margin-left: 400px;
+	-webkit-animation: orbita 20s linear 2s infinite normal;
+}
+@keyframes orbita{
+	0%{width: 70px;transform: rotate(0deg);}
+	24%{z-index: 0;/* чтобы луна ен вылизала раньше времени*/}
+	25%{left: 350px; top: 130px; z-index: 2;/* мы указываем то что наша луна выходит на передний план от земли */}
+	50%{width: 130px;}
+	74%{z-index: 2;}
+	75%{top: 300px; left: 40px; z-index: 0;}
+	100%{width: 70px;transform: rotate(360deg);
+	}
+}
+@keyframes orbita{
+	0%{width: 70px;transform: rotate(0deg);}
+	24%{z-index: 0;}
+	25%{left: 350px; top: 130px; z-index: 2;}
+	50%{width: 130px;}
+	74%{z-index: 2;}
+	75%{top: 300px; left: 40px; z-index: 0;}
+	100%{width: 70px;transform: rotate(360deg);}
+}
+@keyframes earth{
+	0%{transform: rotate3d(0deg);}
+	100%{transform: rotate(-360deg);}
+}

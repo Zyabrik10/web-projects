@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background: url(https://html-templates.info/images/pages/140520040122.jpg)  black;
+}
+body{
+	height: 300px
+}
+header{
+	background-color: white;
+	border-bottom: 2px  solid silver;
+	width: calc(100% - 20px);
+	height: 50px;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #333;
+	font-family:Comic Sans Ms ;
+	position: fixed;
+}
+article{
+	background-color: #fafafa;
+	min-height: 500px;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	margin-top: 100px;
+	float: left;
+	width: 60%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 10px;
+}
+aside{
+	overflow: auto;
+	width:25%;
+	top:75px;
+	left:1000px;
+	background-color: #fafafa;
+	height: 450px;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	margin: 100px 10px 10px 0px;
+	float: left;
+    padding: 10px;
+}
+ .ul{
+	list-style-position: inside;
+	list-style-type: armenian;
+}
+.ol{
+	list-style-position: inside;
+	list-style-type: cambodian;
+	list-style-image: url(https://wallpaperscave.ru/images/thumbs/wp-preview/800x500/18/01-24/sci-fi-space-14587.jpg);
+}
+footer{
+	background-color: white;
+	border-top: 2px  solid silver;
+	width: calc(100% - 20px);
+	height: 50px;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #333;
+	font-family:Comic Sans Ms ;
+	margin-top: 20px;
+	float: right;
+}
+
+
+#header_1{
+	color: green;
+}
+h3.style{
+	color: yellow;
+	text-decoration: underline;
+}
+p.style{
+background-color: blue;
+}
+p.style:hover{
+	background-color: green;
+}
+p.style:active{
+	background-color: gold;
+}
+p i{
+	color: #ca5597
+}
+p.example, b{
+	font-size: 18px;
+	font-weight: normal;
+	color: blue;
+	text-decoration: overline;
+}
+p#exemple:first-letter {
+color: red;
+background-color: yellow;
+}
+p#exemple:first-line{
+	color:#e7943b;
+}
+a#href:hover {
+	color:#5f1a;
+}
+#hrefs{
+	color: red;
+}
+#hrefs:visited{
+	color: red;
+}
+#line{
+	text-decoration: line-through;
+}
+#line:hover{
+	text-decoration: none;
+	background-color: red;
+}
+#line:active{
+	background-color: gold;
+}
+#textStyle{
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: Comic Sans MS, sans-serif;
+	text-decoration: underline;
+	text-align: justify;
+	text-transform: capitalize;
+	word-spacing: 1px;
+	letter-spacing: 2px;
+	line-height: 200% ;
+}
+#textStyle span{
+text-transform: none;
+}
+#testBlock{
+	border: 4.5px outset silver;
+	border-bottom: 1px dashed  red;
+	border-top: 1px dotted blue;
+	border-left: 1px inset purple;
+	border-right: 1px outset darkblue;
+	height: 300px;
+	width: 200px;
+	background-color: orange;
+	margin-left: 40%;
+	padding: 10px;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: inset 2px 3px black ;
+}
+ #button{
+	background-color: red;
+	border-radius: 10px;
+	border: 4px dotted green;
+	border-width: 1px;
+	border-top-width: 1px;
+}
+.span{
+	display: block;
+	height: 50px;
+	width:100px;
+	border: 1px solid red;
+	overflow:auto;
+}
+#fa{
+	width: 60px
+}
+hr{
+width: 300px;
+}
+

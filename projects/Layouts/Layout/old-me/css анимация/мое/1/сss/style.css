@@ -1,0 +1,209 @@
+	body{
+		margin: 0;
+		padding: 0; 
+	}
+	#big{
+		display: flex;
+		padding-left: 0px; 
+		padding-top: 25px;
+		background-color: #2F5BCFE0;
+		width: 300px;
+		height: 50px;
+		margin: 65px auto;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 2px 3px 2px #12CAECFF;
+		overflow: hidden;
+		border-radius: 10px;
+		border: 3px dashed #ffff;
+		background: cover;
+    z-index: 2;
+		}
+   /*#big:hover{
+    animation-play-state: paused;
+    }*/ 
+
+	.img{ 
+		display: block;
+		position: absolute;
+		width: 302px;
+		height: 76px;
+		z-index: 0;
+		margin-top: -12px;
+		border-radius: 10px;
+	}
+	.fst{
+		padding: relative;
+		background-color: red;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 0s infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1; 
+	}
+	.scd{
+		padding: relative;
+		background-color: #FF102CFF;
+		height: 45px;
+		width: 20px; 
+		animation: loading 900ms linear 100ms infinite alternate;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1;
+	}
+.thd{
+padding: relative;
+		background-color: #FE9A00FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 200ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px; 
+		opacity: 3;
+		z-index: 1;
+}
+	.frth{
+    padding: relative;
+		background-color: #FF9800FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 300ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1; 
+	}
+	.fth{
+		padding: relative;
+		background-color: yellow;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 400ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1; 
+	}
+	.q{
+		padding: relative;
+		background-color: #F0ED31FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 500ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1; 
+	}
+	.w{
+		padding: relative;
+		background-color: #45DE20FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 600ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1; 
+	}
+	.d{
+			padding: relative;
+		background-color: #6DE31BFF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 700ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1;
+	}
+	.s{
+padding: relative;
+		background-color: #2C54D2FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 800ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1; 
+	}
+	.f{
+		padding: relative;
+		background-color: #1EA0E0FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 900ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1;
+	}
+	.e{
+		padding: relative;
+		background-color: #04FAE3FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 1000ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1;
+		 }
+	.r{
+		padding: relative;
+		background-color: #12CAECFF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 1100ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1;
+	}
+	.t{
+		padding: relative;
+		background-color: #E31BDBFF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 1200ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1;
+		}
+	.y{
+		padding: relative;
+		background-color: #CE3091FF;
+		height: 45px;
+		width: 20px;
+		animation: loading 900ms linear 1300ms infinite alternate;
+		overflow: hidden;
+		margin-bottom: 24px;
+		border-radius: 3px;
+		opacity: 3;
+		z-index: 1;
+	}	
+@keyframes loading {
+0%{height: 45px}
+25%{height: 50px}
+50%{height: 55px}
+75%{height: 60px}
+100%{height: 65px}
+}
+

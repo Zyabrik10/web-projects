@@ -1,0 +1,12 @@
+/* creature_section */
+
+.creatures_section {
+    background: black no-repeat url("https://images8.alphacoders.com/106/1062227.jpg");
+    background-size: cover;
+}
+
+.creatures_section .sec_content {
+    background: hsla(173, 9%, 39%, .5);
+}
+
+/* /creature_section */

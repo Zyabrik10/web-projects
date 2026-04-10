@@ -1,0 +1,103 @@
+#wer:hover{
+	color: blue;
+}
+#wer:active{
+	color: gold;
+}
+p#a:first-letter{
+	background-color: blue;
+}
+h1#a{
+	background-color: blue;
+	color: red;
+}
+h1#a:hover{
+	background-color: red;
+}
+span#qwertysad:hover{
+	color: blue;
+}
+span#rex{
+	background-color: blue
+}
+span#w{
+	background-color: red
+}
+span#e{
+	background-color: yellow
+}
+span#r{
+	background-color: green
+}
+span#t{
+	background-color: brown
+}
+span#y{
+	background-color: pink
+}
+span#u{
+	background-color: purple
+}
+span#i{
+	background-color: lightblue
+}
+span#o{
+	background-color: grey
+}
+span#p{
+	background-color: darkblue
+}
+span#f{
+	background-color: darkgreen
+}
+span#s{
+	background-color: darkred
+}
+span#d{
+	background-color: orange
+}
+span#rex:hover{
+	background-color: yellow
+}
+span#w:hover{
+	background-color: green
+}
+span#e:hover{
+	background-color: brown
+}
+span#r:hover{
+	background-color: pink
+}
+span#t:hover{
+	background-color: purple
+}
+span#y:hover{
+	background-color: lightblue
+}
+span#u:hover{
+	background-color: grey
+}
+span#i:hover{
+	background-color: darkblue
+}
+span#o:hover{
+	background-color: darkgreen
+}
+span#p:hover{
+	background-color: darkred
+}
+span#f:hover{
+	background-color: orange
+}
+span#s:hover{
+	background-color: blue
+}
+span#d:hover{
+	background-color: red
+}
+span{
+ width: 50px;
+}
+
+
+

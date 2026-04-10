@@ -1,0 +1,84 @@
+header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navigation */
+
+header .navigation ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+header .navigation ul li {
+  margin-right: 30px;
+}
+
+header .navigation ul li:last-child {
+  margin-right: 0;
+}
+
+header .navigation ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #adb9c7;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  transition: 0.1s ease-out;
+}
+
+header .navigation ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateY(5px);
+  background-color: rgba(30, 80, 255, 1);
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+header .navigation ul li a:hover {
+  color: #fff;
+}
+
+header .navigation ul li a:hover::before {
+  opacity: 1;
+}
+
+/* button connect-wallet*/
+
+header .connect-wallet {
+  text-decoration: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 56px;
+  border: 1px solid #1e50ff;
+  background: transparent;
+  border-radius: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+header .connect-wallet:hover {
+  background-color: #1e50ff;
+}

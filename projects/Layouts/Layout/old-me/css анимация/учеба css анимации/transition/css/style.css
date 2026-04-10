@@ -1,0 +1,38 @@
+.block{
+	margin: 75px auto;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 60px; 
+	padding: 0px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	border-radius: 10px;
+	top: 0;
+	position: relative;
+	color: #fff;
+	background-color: #5e5373;
+	box-shadow: 0 5px 0 #3c354a;
+	transition-duration: 1s, .5s, 1s;
+	/*transition-duration: 1s; - время перехода перехода от одного значения до другово задаеться в сек и милисек и надо записывать так, если мы запишим в transition-property два значения типо transition-property: background-color, top; то пишеться так transition-duration: .5s, 10; это время для двоих*/
+	transition-property: background-color, top, box-shadow;
+	/* transition-property: all - по умолчанию и м ыможем вписать все что угодно что мы хотим анимирывать*/
+	/* transition-delay - это задержка перед появлением кнопки и перед самой анимации анимации: ; */
+	transition-delay: 0s, .5s, .5s;
+	/*
+	transition-timing-function: ease - по умолчанию, есть ease in, ease out, ease in out, linear, steps - разбивает нашу переход на несколько шагов(10, int,start,end - здесь мы говорим когда идет разбиение), cubis-besier(x1, y1, x2, y2) ; - мы задаем сценарий по которому задаеться анимация
+	 */
+	transition-timing-function: ease-in-out;
+	/*
+	ну а потом как и в animation
+	 */
+	/*transition: 1s background-color .5s ease-in-out;*/
+	left: 200px;
+}
+.block:hover{
+top: 2px;
+box-shadow: 0 3px 0 #3c354a;
+background-color: #18b5a4;
+}
+
+

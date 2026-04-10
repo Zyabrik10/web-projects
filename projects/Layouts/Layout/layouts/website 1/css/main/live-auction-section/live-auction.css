@@ -1,0 +1,7 @@
+section.auction {
+  margin-top: 160px;
+}
+
+section.auction .cards .nft-card {
+  width: 384px;
+}

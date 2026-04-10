@@ -1,0 +1,41 @@
+section.feature .card {
+  width: 282px !important;
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #272d37;
+  border-radius: 16px;
+  padding: 8px;
+  text-align: center;
+  position: relative;
+}
+
+section.feature .card .preview {
+  border-radius: 16px;
+}
+
+section.feature .card .logo {
+  transform: translateY(-50%);
+}
+
+section.feature .card .name {
+  margin-top: -35px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+section.feature .card .value {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+section.feature .card .value .currency {
+  margin-left: 8px;
+}

@@ -1,0 +1,32 @@
+/* 
+  <INTRO>
+*/
+
+.intro {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-content {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.intro-content h1 {
+    font-size: 70px;
+    font-weight: 700;
+    mix-blend-mode: overlay;
+
+}
+
+.intro-content h2 {
+    mix-blend-mode: overlay;
+}
+
+/* 
+    </ INTRO>
+*/

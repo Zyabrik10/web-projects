@@ -1,0 +1,118 @@
+@import url("./nft-card/nft-card.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  /* padding: 0 30px; */
+}
+
+.website-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.website-logo span {
+  margin-left: 10px;
+}
+
+section .header-row-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .header-row-block h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+section .header-row-block a,
+section .header-row-block button {
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #1e50ff;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  transition: 0.2s ease-out;
+}
+
+section .header-row-block a {
+  width: 175px;
+  height: 56px;
+  border-radius: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+section .header-row-block button {
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-weight: 500;
+}
+
+section .header-row-block a:hover {
+  background: #1e50ff;
+}
+
+section .header-row-block button:hover {
+  background: #1e50ff;
+  box-shadow: 0 0 5px #1e50ff, 0 0 10px #1e50ff, 0 0 25px #1e50ff;
+}
+
+section .section-content {
+  margin-top: 56px;
+}
+
+/* This is styles of scroll-bar (works in webkit only)*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,30 @@
+.load{
+	margin: 50px auto;
+	width: 300px;
+	height: 30px;
+	background-color: #039BE5;
+	border: 3px solid #fff;
+	box-shadow: 0px 3px 15px  #0D47A1;/* box-shadow: xpx yx размытиеpx silve; */
+	border-radius: 8px;
+	overflow: hidden; 
+}
+#bar{
+	width: 400px;
+	height: 30px;
+	/*repeating-linear-gradient(45deg - угол наклона, (- это полоскт которое не много прозрачниы и идут от нуля пк до 5 rgba(255, 255, 255, .9) 0, rgba(255, 255, 255, .9) 5px,
+	с 5 до 10 идет прощрачная полоска transparent 5px, transparent 10px пото идет чередование белой полоски с прозрачной); - мы задаем градиент*/
+	background: repeating-linear-gradient(45deg, rgba(255, 255, 255, .9) 0, rgba(255, 255, 255, .9) 5px, transparent 5px, transparent 10px);
+	animation: loading 3s linear infinite; 
+}
+@keyframes loading{
+	from{
+margin-left: 0px;
+	}
+50%{
+	opacity: 0;
+}
+	to{
+
+margin-left: -100px;
+	}
+}

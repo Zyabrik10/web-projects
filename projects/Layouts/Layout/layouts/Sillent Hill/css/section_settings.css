@@ -1,0 +1,21 @@
+section .sec_content {
+    background: hsla(0, 100%, 7%, 0.5);
+    border-radius: 10px;
+    padding: 40px 20px;
+    line-height: 1.8;
+    text-align: justify;
+    color: rgb(200, 200, 200);
+    box-shadow: 0 0 100px hsla(0, 100%, 7%, 1);
+}
+
+section .main-header {
+    background: linear-gradient(#000, #111, #000);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    position: sticky;
+    top: 72px;
+    z-index: 900;
+    font-weight: 700;
+}

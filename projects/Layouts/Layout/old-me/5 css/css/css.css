@@ -1,0 +1,110 @@
+*{
+	font-size: 24px;
+}
+#q{
+	font-size: 100px;
+	margin: 1px;
+}
+html{
+	background-color: red;
+}
+body{
+			background-color: #aaaa;
+			background: url('https://img.lovepik.com/photo/50046/2933.jpg_wh860.jpg') repeat-x white right top;
+		 background-repeat: repeat;
+		}
+#header{
+	color: red;
+}
+#header_1{
+	color: green;
+}
+h3.style{
+	color: yellow;
+	text-decoration: underline;
+}
+p.style{
+background-color: blue;
+}
+p.style:hover{
+	background-color: green;
+}
+p.style:active{
+	background-color: gold;
+}
+p i{
+	color: #ca5597
+}
+p.example, b{
+	font-size: 55px;
+	font-weight: normal;
+	color: blue;
+	text-decoration: overline;
+}
+p#exemple:first-letter {
+color: red;
+background-color: yellow;
+}
+p#exemple:first-line{
+	color:#e7943b;
+}
+a#href:hover {
+	color:#5f1a;
+}
+#hrefs{
+	color: red;
+}
+#hrefs:visited{
+	color: red;
+}
+#line{
+	text-decoration: line-through;
+}
+#line:hover{
+	text-decoration: none;
+	background-color: red;
+}
+#line:active{
+	background-color: gold;
+}
+#textStyle{
+	font-size: 1.4em;
+	font-weight: bold;
+	font-family: Comic Sans MS, sans-serif;
+	text-decoration: underline;
+	text-align: justify;
+	text-transform: capitalize;
+	word-spacing: 10px;
+	letter-spacing: 20px;
+	line-height: 200%;
+}
+#textStyle span{
+text-transform: none;
+}
+p{
+	text-indent: 1.1em;
+}
+#textBlock{
+	border: 9px outset silver;
+	border-bottom: 3px dashed  red;
+	border-top: 3px dotted blue;
+	border-left: 3px inset purple;
+	border-right: 3px outset darkblue;
+	height: 100px;
+	width: 250px;
+	background-color: orange;
+	margin-left: 40%;
+	padding: 20px;
+	border-radius: 50px;
+}
+ #button{
+	background-color: red;
+	border-radius: 50px;
+	border: 4px dotted green;
+	border-width: 6px;
+	border-top-width: 3px;
+}
+#q{
+	font-size: 100px;
+	margin: 1px;
+}

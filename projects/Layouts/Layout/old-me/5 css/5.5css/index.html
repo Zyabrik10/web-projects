@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type"
+	content="html/text" charset="UTF-8">
+	<link rel="stylesheet" content="css/text" href="css/style.css">
+	<title>Изучения css</title>
+</head>
+<body>
+	<!-- calc - означает посчитать оно нужно если надо правильно поставить наш блок и он не вилезал
+
+border-sizing - это означает что не будет изменяться ширина
+	-->
+	<header>Шапка</header>
+<article>
+ <a href="" name="rak"></a>
+<p id="line">
+	Здесь находиться текст ..параграф
+</p>
+<h3 class="style">
+	Заголовок 3 уровня
+</h3>
+<p id="exemple" class="style">
+	Еще не много <i>текстa</i> здесь
+</p>
+<h1 id="header_1">
+Загаловок 1 уровня
+</h1>
+<h3 class="style">
+	Заголовок 3 уровня
+</h3>
+<p class="example">Example</p>
+<b>Example</b><br>
+<a id="href" href="#" title="Проверка">
+	Стили для ссылки
+</a><br>
+<a href="#" id="hrefs">Это пример</a>
+
+<p id="textStyle">Здесь <span>находиться текст параграф</span></p>
+<p id="textStyle">
+	Еще не много текстa здесь
+</p>
+
+<div id="testBlock">Example<br></div><hr><hr>
+
+<span class="span">Абзац 1 Абзац 1 Абзац 1 Абзац 1 Абзац 1 Абзац 1 Абзац 1</span>
+<!--
+display: block; - это говорит о том что наш спан теперь блок и так можно из любого елемената, none - вообще не отображаеться и не оставляет местo,inline - в одну линию, делает елемент строчным, list-item - делает любой елемент частью списка
+;
+visibility -  : hidden - не отображаеться и оставляет место;
+overflow - нужно использывать если что-то не влазит в блок: visible - значения по стандарту то что вылазит будет показано, hidden - то что не влазит в блок будет спрятано а то что влазит  будет показано, scroll - в этот блок добавляеться чтучка чтобы листать вниз и впарво и ты можешь увидеть что внутри блока в который не влезло что-то, auto - онзначает что блок будет снабжон теми полосами прокрутка которым необходим ;  
+--><br>это просто не про укрок по ксс <br>
+	<script type="text/javascript">
+		var a, b;
+		a = 5;
+		b = 3;
+		if(a>=b)
+		document.write(a*b);
+		else if (a<=b) {
+			document.write(b-a)
+		}
+	</script>
+	<form oninput="n.value=(c.value*v.value/2)" action="">
+			<input id="fa" type="number" name="c">
+			x	
+			<input id="fa" type="number" name="v">
+			=
+			<output name="n">0</output>
+	</form>
+</article>
+		<aside>
+			<ul class="ul">
+				<li>Елемент1</li>
+				<li>Елемент2</li>
+				<li>Елемент3</li>
+				<li>Елемент4</li>
+				<li>Елемент5</li>
+			</ul>
+			<ol class="ol">
+				<li>Lorem ipsum dolor sit amet, consectetuer
+				</li>
+				<li>Aliquam tincidunt mauris eu risus.</li>
+				<li>Vestibulum auctor dapibus neque</li>
+			</ol>
+			<!-- 
+list-style-position - мы указываем где находяться елементы списка:outside - за блоком стоит по умолчанию, inside -  в блоке;
+list-style-type - это изминения списка на круг или квадрат и тд(их много	): circle - круг, square - квадрат;
+list-style-image - вместо а : url(https://wallpaperscave.ru/images/thumbs/wp-preview/800x500/18/01-24/sci-fi-space-14587.jpg);
+			-->
+		</aside>
+	<footer>Футер</footer>
+	<!-- float -  позіцианирует блоки они будут идти друг за другом   : none - стоит по умолчанию, left - означает что они будут лежать  друг за другом right - делать все что лефт и меняет блоки местами: лучше задавать это всем блокам
+position -	: absolute - абсолютное позыционирывание и смещаеться относительно всего документа static - по умолчанию fixed - это фиксированое позыционирывание то есть она не смещаеться и всегда с тобой когда ті листаешь сайт но на крутых сайтах используют джава скрипт relative - это относительно позыционирывания нормального потока то есть он смещаеться относительно его места положения
+left right top bottom это отсупы 
+	-->
+	<!--
+clear - он пустой блок ставит друг за друго то есть ты не сможешь поставить блок перед блоками будет ставить блоки
+	-->
+	<!-- min - ... - означает что миничальное что-то, есть и max-->
+<!-- Создания слоев-->
+<!-- слои как стопка бумаги - не видно пока не перевернешь: наше что-то находиться под документом по этому его не будет видно: z-index - слой который мы мозем добавить: -1;
+-->
+<!-- box-shadow - добавляет тень: outset - по умолчанию, inset,) ширина пкс долгота пкс(наверное, автор не говорил) и сам цвет ;-->
+</body>
+</html>

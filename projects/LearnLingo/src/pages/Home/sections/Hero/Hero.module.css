@@ -1,0 +1,97 @@
+.hero .container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero .container {
+    max-height: 530px;
+    flex-direction: row;
+  }
+}
+
+.info {
+  background: var(--color8);
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 720px;
+
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .info {
+    padding: 98px 64px;
+  }
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: calc(56 / 48);
+  letter-spacing: -0.96px;
+
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.mark {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: italic;
+  font-weight: 400;
+
+  border-radius: 8px;
+
+  max-height: 40px;
+}
+
+.description {
+  width: 100%;
+  max-width: 471px;
+
+  line-height: calc(22 / 16);
+  letter-spacing: -0.32px;
+
+  margin-bottom: 64px;
+}
+
+.dec {
+  border-radius: 30px;
+  position: relative;
+
+  overflow: hidden;
+
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .dec {
+    display: block;
+
+    flex: 1;
+  }
+}
+
+.girl {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.mac {
+  display: block;
+  margin: 0 auto;
+
+  margin-top: -66px;
+
+  width: 100%;
+}

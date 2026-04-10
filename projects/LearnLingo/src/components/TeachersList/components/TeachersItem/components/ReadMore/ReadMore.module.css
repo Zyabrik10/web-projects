@@ -1,0 +1,8 @@
+.button {
+  padding: 0;
+  line-height: calc(24 / 16);
+  line-height: 1;
+  border-bottom: 1px solid currentColor;
+
+  margin-bottom: 32px;
+}

@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.lang {
+  border-bottom: 1px solid currentColor;
+}
+
+.value {
+  line-height: calc(24 / 16);
+}

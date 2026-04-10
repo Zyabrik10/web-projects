@@ -1,0 +1,97 @@
+.shop-aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  z-index: 100;
+
+  transition: background 0.2s ease;
+}
+
+.shop-aside.active {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.shop-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* transform: translateX(100%); */
+
+  height: 100vh;
+  overflow-y: scroll;
+  width: 250px;
+
+  background: rgb(0, 2, 12);
+
+  color: #eee;
+
+  transition: transform 0.3s ease-in-out;
+  padding: 0;
+}
+
+.shop-list.active .update-click-list {
+  transform: translateX(0);
+}
+
+.product-preview {
+  border: 1px solid cyan;
+  display: flex;
+  height: 70px;
+}
+
+.product-preview input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+}
+
+.shop-list > li > button {
+  width: 100%;
+
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* height: 47px; */
+
+  position: relative;
+}
+
+.shop-list > li > button:hover {
+  color: #111;
+}
+
+.shop-list > li > button::before {
+  content: '';
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+
+  z-index: -1;
+  background: cyan;
+
+  transition: transform 0.1s ease;
+}
+
+.shop-list > li > button:hover::before {
+  transform: translateX(0);
+}
+
+.shop-list > li > button:active {
+  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+}

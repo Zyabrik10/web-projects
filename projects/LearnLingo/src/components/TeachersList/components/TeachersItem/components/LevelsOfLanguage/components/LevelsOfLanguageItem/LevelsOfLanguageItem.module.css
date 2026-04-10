@@ -1,0 +1,16 @@
+.item {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 35px;
+  border: 1px solid rgba(18, 20, 23, 0.2);
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  margin-bottom: 32px;
+}
+
+.item:first-child {
+  border: 0;
+  background: var(--color1);
+}

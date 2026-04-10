@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="calculator">
+		<input type="text" name="text" class="text_input" readonly>
+		<div class="all-button">
+
+			<div class="buttons-two">
+				<div onclick="clean()" class="critic-left clear">C</div>
+
+				<div onclick="back()" class="back critic-right">&larr;</div>
+
+			</div>
+
+			<div class="buttons">
+				<div onclick="button('7')" class="critic-left">7</div>
+				<div onclick="button('8')">8</div>
+				<div onclick="button('9')">9</div>
+				<div onclick="button('/')" class="critic-right">&divide;</div>
+			</div>
+
+			<div class="buttons">
+				<div onclick="button('4')" class="critic-left">4</div>
+				<div onclick="button('5')">5</div>
+				<div onclick="button('6')">6</div>
+				<div onclick="button('*')" class="critic-right">&times;</div>
+			</div>
+
+			<div class="buttons">
+				<div onclick="button('1')" class="critic-left">1</div>
+				<div onclick="button('2')">2</div>
+				<div onclick="button('3')">3</div>
+				<div onclick="button('-')" class="critic-right critic-bottom">-</div>
+			</div>
+
+			<div class="buttons">
+				<div onclick="button('0')" class="critic-left critic-bottom">0</div>
+				<div onclick="button('.')" class="critic-bottom">.</div>
+				<div onclick="ev()" class="critic-bottom">=</div>
+				<div onclick="button('+')" class="critic-bottom">+</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/js.js"></script>
+</body>
+
+</html>

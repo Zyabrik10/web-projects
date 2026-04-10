@@ -1,0 +1,31 @@
+.label {
+  display: block;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+
+  padding: 16px 18px;
+
+  font-size: 16px;
+
+  color: var(--text-color1);
+  line-height: calc(22 / 16); /* 137.5% */
+}
+
+.input::placeholder {
+  color: var(--text-color1);
+  line-height: calc(22 / 16);
+  text-transform: capitalize;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+
+  transform: translateY(-50%);
+}

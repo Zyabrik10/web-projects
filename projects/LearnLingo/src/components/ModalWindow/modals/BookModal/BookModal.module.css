@@ -1,0 +1,41 @@
+.question {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: calc(32 / 24);
+
+  margin-bottom: 21px;
+}
+
+.radio-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+  margin-bottom: 41px;
+}
+
+.radio-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-list input[type='radio'] {
+  appearance: none;
+  font: inherit;
+
+  width: 24px;
+  height: 24px;
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100%;
+
+  padding: 2px;
+
+  transition: background 0.3s ease;
+}
+
+.radio-list input[type='radio']:checked {
+  background-color: #f9d76c;
+}

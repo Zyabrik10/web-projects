@@ -1,0 +1,1 @@
+export { default as TeachersListSec } from './TeachersListSec/TeachersListSec';

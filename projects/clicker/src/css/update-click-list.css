@@ -1,0 +1,98 @@
+.update-aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  z-index: 100;
+
+  transition: background 0.2s ease;
+}
+
+.update-aside.active {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.update-click-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+
+  height: 100vh;
+  overflow-y: scroll;
+  width: 250px;
+
+  background: rgb(0, 2, 12);
+
+  color: #eee;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.update-aside.active .update-click-list {
+  transform: translateX(0);
+}
+
+.update-click-list > li > button {
+  width: 100%;
+  /* height: 100%; */
+
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  height: 47px;
+
+  position: relative;
+}
+
+.update-click-list > li > button:hover {
+  color: #111;
+}
+
+.update-click-list > li > button::before {
+  content: '';
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+
+  z-index: -1;
+  background: cyan;
+
+  transition: transform 0.1s ease;
+}
+
+.update-click-list > li > button:hover::before {
+  transform: translateX(0);
+}
+
+.update-click-list > li > button:active {
+  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+}
+
+.money {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fall 3s linear;
+  z-index: -10;
+}
+
+@keyframes fall {
+  100% {
+    top: 100%;
+  }
+}

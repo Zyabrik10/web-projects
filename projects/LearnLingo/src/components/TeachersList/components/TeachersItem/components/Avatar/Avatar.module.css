@@ -1,0 +1,33 @@
+.box {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100px;
+  border: 3px solid var(--color1-2);
+
+  width: 120px;
+  height: 120px;
+
+  overflow: hidden;
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+.status {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  border-radius: 100%;
+
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid var(--primary);
+  background: #38cd3e;
+}

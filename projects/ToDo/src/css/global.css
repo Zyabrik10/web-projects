@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: #eee;
+
+  background: #03060d;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 376px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 764px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+.global-title,
+.global-p {
+  margin: 0;
+}
+
+.global-img {
+  display: block;
+}
+
+.global-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.global-button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-style: inherit;
+  color: currentColor;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.global-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-container {
+  --flex-items: 1;
+  --flex-items-gap: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--flex-items-gap);
+}
+
+@media screen and (min-width: 348px) {
+  .flex-container {
+    --flex-items: 2;
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .flex-container {
+    --flex-items: 4;
+  }
+}
+
+.flex-container > .flex-container-item {
+  flex-basis: calc(
+    (100% - (var(--flex-items) - 1) * var(--flex-items-gap)) / var(--flex-items)
+  );
+}

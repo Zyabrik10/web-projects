@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 345px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1312px;
+  }
+}
+
+.main-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.4px;
+}

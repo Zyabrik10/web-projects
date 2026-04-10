@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- notiflix -->
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-aio-3.2.6.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css">
+
+    <link rel="stylesheet" href="./index.scss">
+</head>
+
+<body>
+    <div class="mw add-todo" id="add-todo" style="display: none;">
+        <div class="mw-content">
+            <h2 class="mw-title global-title">Add ToDo</h2>
+            <div class="mw-input-box">
+                <input class="todo-title-input mw-input" type="text" id="todo-title-input" autocomplete="off">
+                <label for="todo-title-input">ToDo Name</label>
+            </div>
+            <div class="mw-input-box">
+                <input class="todo-task-input mw-input" type="text" id="todo-task-input" autocomplete="off">
+                <label for="todo-task-input">ToDo Task</label>
+            </div>
+            <button class="mw-task-add-button mw-button global-button" type="button">Add Task</button>
+            <ul class="mw-task-list mw-added-task-list global-list"></ul>
+            <button class="mw-add-todo-button mw-button global-button" type="button">Add ToDo</button>
+        </div>
+    </div>
+
+    <div class="mw edit-todo" style="display: none;">
+        <div class="mw-content">
+            <h2 class="mw-title global-title">Edit ToDo</h2>
+            <p class="mw-edit-title global-title"></p>
+            <ul class="mw-task-list global-list"></ul>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <button class="button-todo-add header-button global-button">+</button>
+            <nav class="header-nav">
+                <a href="./" class="header-nav-link global-link">ToDo</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="todo">
+            <div class="container">
+                <h1 class="todo-title global-title">ToDo List</h1>
+                <p class="todo-empty-p global-p" style="display: none;">There are no any ToDo yet</p>
+                <ul class="todo-list flex-container global-list"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>

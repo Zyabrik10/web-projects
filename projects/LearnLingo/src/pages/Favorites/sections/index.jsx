@@ -1,0 +1,1 @@
+export { default as FavoritesTeachers } from './FavoritesTeachers/FavoritesTeachers';

@@ -1,0 +1,8 @@
+@import-normalize;
+@import url('./css/global.css');
+@import url('./css/clicker.css');
+@import url('./css/cash.css');
+@import url('./css/earn-per-click.css');
+@import url('./css/update-click-list.css');
+/* @import url('./css/canvas'); */
+@import url('./css/shop');

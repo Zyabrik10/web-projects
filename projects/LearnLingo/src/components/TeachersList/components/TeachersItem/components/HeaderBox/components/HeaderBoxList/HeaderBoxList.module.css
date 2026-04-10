@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  align-items: center;
+
+  margin-right: 64px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding-left: 8px;
+  padding-right: 8px;
+
+  border-right: 1px solid var(--color7);
+}
+
+.item:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.money {
+  color: var(--color6);
+}

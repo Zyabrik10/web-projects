@@ -1,0 +1,40 @@
+.box {
+  overflow: hidden;
+}
+
+.box:hover {
+  display: block;
+}
+
+.list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+
+  width: 100%;
+
+  min-height: 50px;
+  height: auto;
+  max-height: 200px;
+
+  border-radius: 12px;
+  background: #fff;
+
+  text-overflow: ellipsis;
+
+  z-index: 10;
+
+  overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 0px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: var(#696969);
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}

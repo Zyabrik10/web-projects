@@ -1,0 +1,13 @@
+.button {
+  padding: 14px 18px;
+  width: 100%;
+
+  text-align: left;
+
+  transition: background 0.3s ease;
+}
+
+.button:focus,
+.button:hover {
+  background: rgb(240, 240, 240);
+}

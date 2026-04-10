@@ -1,0 +1,36 @@
+.auth {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .auth {
+    display: flex;
+  }
+}
+
+.login,
+.logout {
+  display: flex;
+
+  gap: 8px;
+
+  color: var(--text-color1);
+  font-weight: 700;
+  line-height: calc(20 / 16);
+}
+
+.registration {
+  background: var(--text-color1);
+
+  padding: 14px;
+  border-radius: 12px;
+  gap: 8px;
+
+  color: #fff;
+  font-weight: 700;
+  line-height: calc(20 / 16);
+}

@@ -1,0 +1,61 @@
+:root {
+  /* Flex */
+  -flex-items: 4;
+  -flex-items-gap: 20px;
+
+  /* Colors */
+  --primary: #ffffff;
+
+  --color1: #f4c550;
+  --color1-2: #fbe9ba;
+
+  --color2: #9fbaae;
+  --color2-2: #cbded3;
+
+  --color3: #9fb7ce;
+  --color3-2: #bfd6ea;
+
+  --color4: #e0a39a;
+  --color4-2: #f2c0bd;
+
+  --color5: #f0aa8d;
+  --color5-2: #f4c8ba;
+
+  --color6: #38cd3e;
+
+  --color7: #8a8a89;
+
+  --color8: #f8f8f8;
+
+  /* text color */
+  --text-color1: #121417;
+  --text-color2: #121417cc;
+  --text-color3: #8a8a89;
+  --text-color4: rgba(18, 20, 23, 0.8);
+
+  /* gradients */
+  --gradient1-start: #eeb055;
+  --gradient1-end: #d08f38;
+  --gradient1-2-start: #fbe9ba;
+  --gradient1-2-end: #e7c885;
+
+  --gradient2-start: #295761;
+  --gradient2-end: #183e49;
+  --gradient2-2-start: #cbded3;
+  --gradient2-2-end: #9eb9ad;
+
+  --gradient3-start: #314b6e;
+  --gradient3-end: #1f385a;
+  --gradient3-2-start: #bfd6ea;
+  --gradient3-2-end: #9fb6cd;
+
+  --gradient4-start: #b03f3e;
+  --gradient4-end: #982a27;
+  --gradient4-2-start: #f1c0bd;
+  --gradient4-2-end: #dfa299;
+
+  --gradient5-start: #e17650;
+  --gradient5-end: #ca5b38;
+  --gradient5-2-start: #f3c8ba;
+  --gradient5-2-end: #efa98c;
+}

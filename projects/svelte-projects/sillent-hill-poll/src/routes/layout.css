@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+body {
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+		url(https://external-preview.redd.it/loneliness-and-isolation-in-silent-hill-v0-kunVpetjL70bGTJrBFRAH5vmpwUAassSuN2CB9DNKm4.jpg?auto=webp&s=441ebf6c564783b690f547758e48d99422984dfe);
+	background-size: cover;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+	width: 100vw;
+	height: 100vh;
+
+	color: rgb(111, 0, 0);
+}

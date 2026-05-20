@@ -1,0 +1,53 @@
+.input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  outline: 2px solid transparent;
+
+  transition: outline 0.3s;
+}
+
+.input:hover,
+.input:focus {
+  outline: 2px solid rgb(0, 93, 165);
+}
+
+.input-text-label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-text-label .required {
+  color: red;
+}
+
+.input-text-label.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.label-text-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.label-text {
+  display: inline-block;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.input-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-checkbox.checked {
+  background-color: rgb(0, 93, 165);
+  color: white;
+}

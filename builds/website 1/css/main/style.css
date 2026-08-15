@@ -1,0 +1,27 @@
+@import url("./hero/hero.css");
+@import url("./crypto-wallets-section/crypto-wallets.css");
+@import url("./sell-crypto-section/sell-crypto.css");
+@import url("./live-auction-section/live-auction.css");
+@import url("./feature-section/feature.css");
+@import url("./hot-section/hot.css");
+@import url("./article/article.css");
+
+section {
+  margin-top: 160px;
+}
+
+section:first-child {
+  margin-top: 170px;
+}
+
+section ul.section-main-row-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+section ul.section-main-row-block li.card {
+  width: 384px;
+}

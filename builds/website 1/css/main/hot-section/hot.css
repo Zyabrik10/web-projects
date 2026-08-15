@@ -1,0 +1,50 @@
+section.hot .header-row-block .filters {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+section.hot .header-row-block .filters li {
+  margin-right: 24px;
+}
+
+section.hot .header-row-block .filters li:last-child {
+  margin-right: 0;
+}
+
+section.hot .card {
+  margin-top: 32px;
+}
+
+section.hot .card:nth-child(1),
+section.hot .card:nth-child(2),
+section.hot .card:nth-child(3) {
+  margin-top: 0;
+}
+
+section.hot .button {
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #1e50ff;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  transition: 0.2s ease-out;
+  width: 175px;
+  height: 56px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 56px;
+  color: #ffffff;
+}
+
+section.hot .button:hover {
+  background-color: #1e50ff;
+}

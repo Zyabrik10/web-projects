@@ -1,0 +1,99 @@
+.games-list,
+.games-list-2 {
+    position: relative;
+    width: 100%;
+}
+
+.games-list {
+    background: url('../img/sec-2.jpg');
+}
+
+.games-list-2 {
+    background: url('https://wallpapercave.com/wp/n7xuQgj.jpg');
+}
+
+
+.about-the-game,
+.games-list,
+.games-list-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.games-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.games-list-2 .games-block {
+    justify-content: center;
+}
+
+.games-list-2 .games-block .game-block:first-child {
+    margin-right: 40px;
+}
+
+.games-list-2 .games-block .game-block:last-child {
+    margin-right: 0;
+}
+
+.game-block {
+    overflow: hidden;
+    margin-top: 20px;
+    width: calc(100% / 3 - 20px * 2);
+    background: rgba(100, 100, 100, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.game-block:nth-child(1),
+.game-block:nth-child(2),
+.game-block:nth-child(3) {
+    margin-top: 0;
+}
+
+.game-block::before {
+    content: attr(data-year);
+    position: absolute;
+    background: #880808;
+    padding: 5px 10px;
+    color: white;
+}
+
+.game-block .intro-game {
+    display: block;
+    height: 400px;
+}
+
+.header-block-game {
+    background: #000;
+    text-align: center;
+    color: #aaa;
+    font-weight: 700;
+}
+
+.text {
+    padding: 15px;
+    flex: 1 1 auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.data-game {
+    flex: 0 0 auto;
+}
+
+.list-platforms {
+    list-style: none;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}

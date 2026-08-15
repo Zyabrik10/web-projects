@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Before и After</title>
+	<style>
+		.dws{
+			position: absolute;/*Мы делаем абсолютное позиционирывание чтобы его поставить по центру*/
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.butt{
+			display: block;
+			text-decoration: none;
+			text-transform: uppercase;
+		    width: 250px;
+			height: 60px;
+			border: 3px solid #218294;
+			color: #218294;
+			text-align: center;/*Это отступы по верктикале*/
+			line-height: 60px;
+            font-size: 30px;
+            font-family: unset;
+            font-family: Arial, sans-serif;
+            position: relative;
+            /*Это сделано чтобы текст не исчезал из-за белого фона*/
+            transition: all .5s linear ;
+            overflow: hidden;
+		}
+		.butt:before,
+		.butt:after{
+         position: absolute;
+         content: '';
+         width: 100%;
+         height: 100%;
+         background-color: #218294;
+         top:0;
+         left: -100%;
+         opacity: .5;
+         transition: all .5s ease-in-out;/*Это нужно чтобы текст плавно менял цвет*/
+         z-index: -1;/*Это нужно чтобы белый текст при наведении не проподал*/
+		}/*Стил before и after как я понял делают блок до главного блока и после и здесь мы их написали их вместе но можно и не вместе это сделано так как и там и там ониодинакрвыу*/
+			.butt:after{
+			opacity: 1;
+			transition-delay: .2s;
+		}
+		.butt:hover{
+			color: white;
+		}
+		.butt:hover:before,
+		.butt:hover:after{
+          left: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="dws">
+	<a href="#" class="butt">Button</a>
+<!-- </div>
+Картинки по запросу что такое before и after в css
+Псевдоэлементы ::after и ::before. ::after создаёт псевдоэлемент после содержимого элемента. Этот псевдоэлемент работает только совместно со стилевым свойством content, которое определяет содержимое для вставки. -->
+</body>
+</html>

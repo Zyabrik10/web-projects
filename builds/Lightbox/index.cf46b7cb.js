@@ -1,0 +1,22 @@
+class t{constructor(t,e){this.container=document.querySelector(t),this.container.addEventListener("click",this.openModalWindow.bind(this)),this.modal=e}openModalWindow(t){t.preventDefault();let{target:e,currentTarget:i}=t;if(e===i)return;let n=e;e.classList.contains("lightbox-container-item")&&(n=e.querySelector(".lightbox-container-img")),this.modal.element.classList.add("active");let o=n.dataset.index,a=Array.from(document.querySelectorAll("a.lightbox-container-item"));this.modal.images=a,this.modal.currentIndex=+o,this.modal.render(n),window.addEventListener("keydown",this.modal.windowKeyDownHandler)}add(t){let e=t.map(({id:t,url:e,largeUrl:i,description:n},o)=>(function({url:t,largeUrl:e,description:i,id:n,q:o}){return`
+    <a data-id="${n}" data-index=${o} class="lightbox-container-item" href="${t}">
+        <img class="lightbox-container-img" data-index=${o} src="${t}" alt="${i}" data-large-url="${e}">
+    </a>
+  `})({url:e,largeUrl:i,description:n,id:t,q:o})).join("\n");this.container.insertAdjacentHTML("beforeend",e)}}class e{static instance=null;initCloseButton(){this.element=document.querySelector(".lightbox-modal"),this.element.querySelector(".lightbox-modal-close-button").addEventListener("click",this.closeModal.bind(this))}initElement(){this.element=document.querySelector(".lightbox-modal"),document.body.insertAdjacentHTML("beforeend",function(t={}){return`
+    <div class="lightbox-modal">
+      <div class="lightbox-modal-content">
+        <p class="lightbox-modal-q-info">
+          <span class="lightbox-modal-current-q"></span>
+          /
+          <span class="lightbox-modal-all-items"></span>
+        </p>
+        <div class="lightbox-controlls">
+          <button class="lightbox-controll-button lightbox-controll-button-left">&larr;</button>
+          <button class="lightbox-controll-button lightbox-controll-button-right">&rarr;</button>
+        </div>
+        <button class="lightbox-modal-close-button">&times;</button>
+        <img class="lightbox-modal-img" alt="">
+      </div>
+    </div>
+  `}())}initControllsButton(){let t=this.element.querySelector(".lightbox-controll-button-left"),e=this.element.querySelector(".lightbox-controll-button-right");t.addEventListener("click",this.previous.bind(this)),e.addEventListener("click",this.next.bind(this))}init(){this.initElement(),this.initCloseButton(),this.initControllsButton(),this.windowKeyDownHandler=this.keydownHandler.bind(this)}render(t){let e=t.dataset.largeUrl;this.element.querySelector(".lightbox-modal-img").src=e;let i=document.querySelector(".lightbox-modal-current-q"),n=document.querySelector(".lightbox-modal-all-items");i.textContent=this.currentIndex+1,n.textContent=this.images.length}static getInstance(){return null!==e.instance||(e.instance=new e,e.instance.init(),this.images=[],this.currentIndex=void 0),e.instance}closeModal(){this.element.classList.remove("active"),window.removeEventListener("keydown",this.windowKeyDownHandler)}keydownHandler({key:t}){switch(t){case"Escape":this.closeModal();break;case"ArrowRight":this.next();break;case"ArrowLeft":this.previous()}}next(){this.currentIndex++,this.currentIndex>this.images.length-1&&(this.currentIndex=0);let t=this.images[this.currentIndex].querySelector("img");this.render(t)}previous(){this.currentIndex--,this.currentIndex<0&&(this.currentIndex=this.images.length-1);let t=this.images[this.currentIndex].querySelector("img");this.render(t)}}class i{init(i){this.lightboxModal=e.getInstance(),this.lightboxContainer=new t(i,this.lightboxModal)}addImages(t){this.lightboxContainer.add(t)}}const n=new class{constructor(t){this.API=t}async fetch({query:t,page:e=1,per_page:i,safesearch:n=!1,image_type:o="photo",orientation:a="horizontal",category:r=""}){return i||(i=apiConfig.per_page),await this.API.fetch({query:{key:this.API.token,image_type:o,orientation:a,safesearch:n,q:t,page:e,per_page:i,category:r}})}}(new class{constructor({baseURL:t,token:e=""}){this.baseURL=t,this.token=e}async fetch({api:t="",query:e={}}){let i=new URLSearchParams(e),n=`${this.baseURL}${t}/?${i}`;return await axios.get(n)}}({baseURL:"https://pixabay.com/api",token:"35790595-0862ce34bbcdea66fb3b3d261"}));window.addEventListener("load",async()=>{try{let t=new i;t.init(".container");let e=(await n.fetch({query:"waterfall",orientation:"horizontal",per_page:10,category:"nature"})).data.hits.map(({id:t,previewURL:e,largeImageURL:i,tags:n})=>({url:e,largeUrl:i,description:n,id:t}));t.addImages(e)}catch(t){console.error(t)}});
+//# sourceMappingURL=index.cf46b7cb.js.map

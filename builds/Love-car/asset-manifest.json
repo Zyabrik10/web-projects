@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Love-car/static/css/main.8ce9f455.css",
+    "main.js": "/Love-car/static/js/main.2994743d.js",
+    "index.html": "/Love-car/index.html",
+    "static/media/love.svg": "/Love-car/static/media/love.51abbd690c11469d18e59b44a1ea9ce1.svg",
+    "static/media/love_active.svg": "/Love-car/static/media/love_active.3e9f5f231421a99b7b532a2fa6b400de.svg",
+    "static/media/close.svg": "/Love-car/static/media/close.69b1f3bb989ef61c6aeb.svg",
+    "static/media/arrow-up.svg": "/Love-car/static/media/arrow-up.6dc43fd291fdeeac1b225202a3dce225.svg",
+    "main.8ce9f455.css.map": "/Love-car/static/css/main.8ce9f455.css.map",
+    "main.2994743d.js.map": "/Love-car/static/js/main.2994743d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ce9f455.css",
+    "static/js/main.2994743d.js"
+  ]
+}

@@ -15,8 +15,8 @@ const Content = () => {
   );
   const dispatch = useDispatch();
 
-  function onSubmit(e) {
-    e.preventDefault();
+  function onSubmit(e: unknown) {
+    (e as Event).preventDefault();
 
     console.log(transactionValue, transactionCurrency);
 
@@ -38,7 +38,7 @@ const Content = () => {
         type="text"
         placeholder="transactionValue"
         value={transactionValue}
-        onChange={(e) => setTransactionValue(e.target.value)}
+        onChange={(e) => setTransactionValue(+e.target.value)}
       />
       <select
         className="p-[10px] text-black"

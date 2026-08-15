@@ -1,7 +1,6 @@
 "use client";
 
-import { Disclosure } from "@/components";
-import Input from "@/components/Input";
+import { Disclosure, Input } from "@/components";
 import { useState } from "react";
 import "./globals.css";
 
@@ -86,7 +85,9 @@ export default function Home() {
         <h1 style={{ margin: "10px 0px" }}>Controlled on change</h1>
         <Input
           value={value4}
-          onChange={(e) => setValue4(e.target.value as string)}
+          onChange={(e) =>
+            setValue4(((e as Event).target! as HTMLInputElement).value)
+          }
           placeholder="Text..."
           label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui, quasi ullam reprehenderit, ipsum magnam quod, sed aliquid non modi tempore autem ea quae consectetur harum fugiat. Aliquam, sunt dolorum?"
           required
@@ -183,7 +184,9 @@ export default function Home() {
         <Input
           type="number"
           value={num}
-          onChange={(e) => setValue4(e.target.value as string)}
+          onChange={(e) =>
+            setValue4(((e as Event).target! as HTMLInputElement).value)
+          }
           placeholder="Number..."
           label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui, quasi ullam reprehenderit, ipsum magnam quod, sed aliquid non modi tempore autem ea quae consectetur harum fugiat. Aliquam, sunt dolorum?"
           required

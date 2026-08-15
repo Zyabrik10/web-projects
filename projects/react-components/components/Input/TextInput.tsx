@@ -4,7 +4,7 @@ import styles from "./Input.module.css";
 type Props = Readonly<{
   value: string;
   setValue: (val: string) => void;
-  onChange?: null | ((event: unknown) => void);
+  onChange?: null | ((text: string, e: unknown) => void);
   className?: string;
   label?: string;
   required?: boolean;
@@ -19,7 +19,7 @@ export default function TextInput(props: Props) {
   if (props.label?.length) {
     return (
       <label
-        className={`${styles["input-text-label"]} ${styles["input-variables"]}`}
+        className={`${styles["input-text-label"]}`}
         style={{
           maxWidth:
             props.width && props.width.length > 0 ? props.width : "100%",
@@ -60,16 +60,16 @@ function Input({
         ...style,
       }}
       id={id}
-      className={`${styles["input"]} ${className}`}
+      className={`${styles["input"]} ${className || ""}`}
       type="text"
       value={value}
       onChange={(e: unknown) => {
-        if (onChange && typeof onChange === "function") {
-          onChange(e);
-        } else {
-          const input = (e as Event).target as HTMLInputElement;
-          const text = input.value;
+        const input = (e as Event).target as HTMLInputElement;
+        const text = input.value;
 
+        if (onChange && typeof onChange === "function") {
+          onChange(text, e);
+        } else {
           setValue(text);
         }
       }}

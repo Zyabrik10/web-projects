@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 29px;
+  line-height: 40px;
+  background-color: #03e9f4;
+  border-radius: 100px 100px 100px 0;
+  color: #fff;
+}
+.text {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  transform: scaleX(-1);
+  transition: 1s;
+  opacity: 0;
+}
+.phone {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  animation: phone 1s ease-in-out infinite;
+  transition: all 0.5s;
+}
+.button:hover .phone {
+  opacity: 0;
+}
+.button:hover .text {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20;
+}
+.button:hover::after {
+  animation-delay: 0.5s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@keyframes phone {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}

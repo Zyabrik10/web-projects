@@ -1,5 +1,5 @@
 import { Currency, Transaction } from "@/src/types";
-import { convertCurrencies, validateCurrency } from ".";
+import { convertCurrency } from "./api";
 
 export function createTransaction(
   moneyBefore: number,
@@ -7,11 +7,11 @@ export function createTransaction(
   transactionValue: number,
   transactionCurrency: Currency,
 ) {
-  const convertedValue = convertCurrencies(
-    transactionValue,
-    transactionCurrency,
+  const convertedValue = convertCurrency({
+    value: transactionValue,
+    convertCurrency: transactionCurrency,
     currentCurrency,
-  );
+  });
   return {
     id: crypto.randomUUID(),
     moneyBefore,
@@ -28,11 +28,11 @@ export function calculateTransactions(history: Transaction[] = []) {
   let money = 0;
 
   for (const trans of history) {
-    money += convertCurrencies(
-      trans.transactionValue,
-      trans.transactionCurrency,
-      trans.currentCurrency,
-    );
+    money += convertCurrency({
+      value: trans.transactionValue,
+      convertCurrency: trans.transactionCurrency,
+      currentCurrency: trans.currentCurrency,
+    });
   }
 
   return money;
@@ -105,4 +105,12 @@ export function getSerializableHistory(history: Transaction[]) {
     transactionCurrency: trans.transactionCurrency,
     currentCurrency: trans.currentCurrency,
   }));
+}
+
+export function validateCurrency(currency: Currency) {
+  return true;
+}
+
+export function validateMoney(money: number) {
+  return true;
 }

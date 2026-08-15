@@ -1,0 +1,353 @@
+*{
+	user-select: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.ulOfImgOfHero{
+	position: absolute;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.del{
+	display: none;
+}
+.chooseHero .ulOfImgOfHero .choosenHero{
+	position: relative;
+	list-style: none;
+	border-left: 1px solid black;
+	cursor: pointer;
+	overflow: hidden;
+}
+.chooseHero .ulOfImgOfHero .choosenHero .img .imgOfHeroFirst{
+	transition: .3s;
+}
+.chooseHero .ulOfImgOfHero .choosenHero .img .beforeImgOfHeroFirst{
+	text-align: center;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	width: 100%;
+	padding: 50px 0 50px 0; 
+	color: white;
+	background-color: #00000087;
+	font-size: 24px;
+	transition: .3s;
+	font-family: Arial,sanse-serif;
+}
+.chooseHero .ulOfImgOfHero .choosenHero:hover  .beforeImgOfHeroFirst{
+	transform: translateY(200px);
+}
+.chooseHero .ulOfImgOfHero .choosenHero:nth-child(2) .chooseHero .ulOfImgOfHero .choosenHero .img .beforeImgOfHeroFirst{
+	content: "Лекарь";
+}
+.chooseHero .ulOfImgOfHero .choosenHero:nth-child(3) .chooseHero .ulOfImgOfHero .choosenHero .img .beforeImgOfHeroFirst{
+		content: "Маг";
+}
+.chooseHero .ulOfImgOfHero .choosenHero .img .underImg{
+	position: absolute;
+    top: 0;
+    left: 50%;
+	width: 0;
+	height: 100%;
+ 	background-color: #00000087;
+ 	transition: .3s;
+}
+.chooseHero .ulOfImgOfHero .choosenHero:hover .underImg{
+	left: 0;
+	width: 100%;
+}
+.chooseHero .ulOfImgOfHero .choosenHero .img .underImg .imgInUnderImg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 35%;
+	height: 35%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: .4s
+}
+.chooseHero .ulOfImgOfHero .choosenHero:nth-child(2) .img .underImg .imgInUnderImg{
+	width: 45%;
+	height: 30%;
+}
+.chooseHero .ulOfImgOfHero .choosenHero:nth-child(3) .img .underImg .imgInUnderImg{
+	height: 55%;
+}
+.chooseHero .ulOfImgOfHero .choosenHero:hover .underImg .imgInUnderImg{
+	opacity: 1;
+}
+.chooseHero .ulOfImgOfHero .choosenHero:hover .imgOfHeroFirst{
+	transform: scale(1.3);
+}
+
+/*Begining window*/
+
+.startWindow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    background-color: black;
+    z-index: 9;
+}
+
+/* Аnimation click on the startWindow*/
+
+.circleWhileClick{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+    border-radius: 100%;
+    animation: rise .3s linear;
+    transform: scale(0);
+    z-index: 10;
+}
+
+@keyframes rise{
+0% {
+  transform: scale(.3);
+  opacity: .6;
+ }
+ 50% {
+  
+ }100%{
+  transform: scale(1.8);
+  opacity: 0;
+ }
+}
+
+/*Button at the begining*/
+
+.startButton{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 150px;
+	height: 45px;
+	background-color: black;
+	color: white;
+	transition: .2s;
+	border-radius: 5px;
+	text-align: center;
+	justify-content: center;
+	font-size: 36px;
+	font-family: Arial,sanse-serif;
+	cursor: pointer;
+}
+	
+.startButton:hover{
+ 	background-color: white;
+	color: black;
+}
+
+.blur{
+	filter: blur(3px);
+	cursor: auto;
+	transition: .5s;
+	z-index: 0;
+	background-color: black;
+}
+
+.windowOffeaturesOfhero{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background: url(https://i.pinimg.com/originals/d1/38/fa/d138fa1913c867eeb5f12f7bcdadb229.jpg) black;
+	width: 70%;
+	height: 90%;
+    background-size: cover;
+	color: white;
+	cursor: auto;
+	padding: 10px;
+    overflow: hidden;
+    border-radius: 3px; 
+    border: 3px solid black;
+    z-index: 2;
+}
+
+.compareWindow{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+    border-radius: 3px; 
+    z-index: 3;
+}
+.compareWindow ul{
+	display: flex;
+}
+
+.compareWindow ul li{
+	list-style: none;
+	border-left: 3px solid black;
+}
+.compareWindow ul li img{
+	width: 500px;
+}
+
+
+.wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000B8;
+	z-index: 1;
+}
+
+.Rosa{
+	background-image: url(../img/kot_krysha_gorod.jpg); 
+	background-size: cover;
+}
+
+.konsButtonImg{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	left: 71.3%;
+	top: 5%;
+}
+
+.Richard .discribe .history,
+.Yukino .discribe .history,
+.Rosa .discribe .history{
+ 	position: absolute;
+ 	left: 50%; 
+ 	top: 50%;
+ 	transform: translate(-50%, -50%);
+ 	background: url(../img/старая-бумага.jpg) black;
+ 	padding: 10px;
+ 	width: 600px;
+	height: 730px;
+ 	color: black;
+ 	border-radius: 5px;
+ 	overflow: hidden;
+    box-shadow: 0 0 20px black;
+    background-size: cover;
+}
+
+.Yukino{
+	background-image: url(../img/razvaliny-monstry-voyny-magiya.jpg);
+}
+
+.Rosa .discribe .history{
+	background:#00C1FF7E;
+	border: 3px solid #00FFFFFF;
+	color: white;
+	font-family:Arial,sanse-serif; 
+	text-align: justify;
+}
+
+.Yukino .discribe .history{
+	background-image:  url(../img/старая-бумага.jpg);
+}
+
+.Richard .discribe .featuresWraper,
+.Yukino  .discribe .featuresWraper,
+.Rosa .discribe .featuresWraper{
+	position: absolute;
+	background: url(../img/старая-бумага.jpg) black;
+	top: 6%;
+	left: 73%;
+	font-size: 20px;
+	color: black;
+	border-radius: 5px;
+	padding: 5px;
+	transform: rotateZ(-10deg);
+	z-index: -1;
+    box-shadow: 0 0 5px black;
+
+}
+
+.featuresWraper ul li{
+	list-style: none;
+	margin-left: -20px;
+}
+
+.Rosa .discribe .featuresWraper ul li{
+	list-style: armenian;
+}
+
+.Rosa .discribe .featuresWraper{
+	transform: rotateZ(0deg);
+	background-image: url(../img/abstract-tech.jpg);
+	background-size: cover;
+	border: 3px solid #00FFFFFF;
+	color: #00FFFFFF;
+	padding: 25px;
+	font-size: 16px;
+	left: 80%;
+	top: 7.9%;
+}
+
+.Yukino  .discribe .featuresWraper{
+	background-image: url(../img/старая-бумага.jpg);
+}
+
+.buttons{
+	display: flex;
+	position: absolute;
+	bottom: 5%;
+	left: 37.5%;
+	text-align: center;
+	line-height: -100px;
+
+}
+
+.buttonsToDo,
+.Rosabut{
+	margin-left: 3px;
+    width: 110px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #00FFFFFF;
+    outline: none;
+    transition: .5s;
+	background-color: black;
+
+}
+
+.buttonsToDo:hover{
+	background-color:#1AFF00FF;
+    color: black;
+    box-shadow: none;
+}
+
+.Rosabut{
+	margin-top: -50px; 
+}
+
+.Rosabut:hover{
+	background-color: #00FFFFFF;
+	color: white;
+	box-shadow: 0 0  5px  #00FFFFFF,
+	            0 0  25px #00FFFFFF,
+	            0 0 75px  #00FFFFFF,
+	            0 0 100px#00FFFFFF;
+}
+
+.enemy{
+
+}
+.hero{
+	
+}
+
+.game{
+	position: absolute;
+	display: flex;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+

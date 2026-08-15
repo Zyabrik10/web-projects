@@ -1,0 +1,119 @@
+.nft-card {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #272d37;
+  border-radius: 24px;
+}
+
+.nft-card .preview {
+  position: relative;
+  z-index: 10;
+}
+
+.nft-card .preview img {
+  border-radius: 24px;
+}
+
+.nft-card .preview .timer {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 16px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #0f182e;
+  border-radius: 16px;
+  width: 192px;
+  height: 42px;
+  z-index: 11;
+}
+
+.nft-card .preview .timer span {
+  margin-left: 10px;
+}
+
+.nft-card .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.nft-card .description .name {
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.nft-card .description .protocol {
+  width: 59px;
+  height: 29px;
+  background: #1e50ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-card .info {
+  z-index: 1;
+}
+
+.nft-card .user-info {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft-card .user-info .user-icon {
+  border-radius: 16px;
+}
+
+.nft-card .user-info .info-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.nft-card .user-info .info-list ul {
+  list-style: none;
+}
+
+.nft-card .user-info .info-list ul li:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8f9ca9;
+}
+
+.nft-card .user-info .info-list ul li:last-child {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.nft-card .user-info .info-list ul:first-child {
+  margin-left: 16px;
+}

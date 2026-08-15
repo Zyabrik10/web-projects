@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/clicker/static/css/main.c10f7a89.css",
+    "main.js": "/clicker/static/js/main.da08b40d.js",
+    "static/media/click.mp3": "/clicker/static/media/click.69bed42fb949b9a2a631.mp3",
+    "index.html": "/clicker/index.html",
+    "main.c10f7a89.css.map": "/clicker/static/css/main.c10f7a89.css.map",
+    "main.da08b40d.js.map": "/clicker/static/js/main.da08b40d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c10f7a89.css",
+    "static/js/main.da08b40d.js"
+  ]
+}

@@ -1,0 +1,75 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(https://wp-lessons.com/wp-content/uploads/2014/07/110-660x330.jpg.pagespeed.ce.hQkzSA0r0E.jpg);
+	background: cover;
+}
+.menu{
+	margin-top: 50px;
+
+}
+#ul{
+	display:flex;
+	justify-content: center;/* центрирует*/
+	list-style-type: none; 
+}
+.li{
+	display: block;
+	background-color: #ececed;
+	padding: 15px 30px 15px 40px;
+	font-size: 14px;
+	color: #454547;
+	text-transform:  uppercase;
+	position: relative;
+	border-right: 1px solid silver;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+}
+#a{
+	text-decoration: none;
+	color:#3886C6FF;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+}
+#a i{
+	position: absolute;
+	top: 15px;
+}
+.li:first-child{
+	border-left: 1.5px solid pink;
+}
+.li:last-child{
+	border-right: 1.5px solid green;
+}
+
+.li:hover #a{
+	background: #454547;
+	color: #ffffff;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+}/* что бы все это работало надо записывать именно .menu li, .menu > ul li > a i.fa ... */
+.li:hover{
+	background: #454547;
+	color: #ffffff;
+	box-shadow: 1px 5px 10px -5px black;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+}
+/* выпадающие меню Sub menu*/
+ .link{
+ 	position: absolute;
+	top: 46px;
+	list-style-type: none;
+	min-width: 150px;
+	background-color: #ececed;
+	border: 1px solid silver;
+	display: none;
+	}
+
+.li:hover li{
+	display: block;
+
+}
+ li{
+	border: 1px solid silver;
+}

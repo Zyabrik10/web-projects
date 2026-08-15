@@ -4,7 +4,7 @@ import styles from "./Input.module.css";
 type Props = Readonly<{
   value: number;
   setValue: (val: number) => void;
-  onChange?: null | ((event: unknown) => void);
+  onChange?: null | ((newNumber: number, e: unknown) => void);
   className?: string;
   label?: string;
   required?: boolean;
@@ -64,12 +64,12 @@ function Input({
       type="number"
       value={value}
       onChange={(e: unknown) => {
-        if (onChange && typeof onChange === "function") {
-          onChange(e);
-        } else {
-          const input = (e as Event).target as HTMLInputElement;
-          const number = Number.parseFloat(input.value);
+        const input = (e as Event).target as HTMLInputElement;
+        const number = Number.parseFloat(input.value);
 
+        if (onChange && typeof onChange === "function") {
+          onChange(number, e);
+        } else {
           setValue(number || Number.NaN);
         }
       }}

@@ -1,0 +1,417 @@
+<!DOCTYPE html><!--это означает какой штмл мы используем, такая запись говорит нам, что мы используем последний штмл5, оно ни как не влияет на отображения сайта и можно без нее но выглядит круто-->
+<html lang="en"><!-- тег на котором находиться все и дальше идет атрибут-->
+<head><!-- Урок про хед-->
+	<meta charset="UTF-8"><!--это кадировка сайт то есть на каком язике мы пишем сайт charset это такая штука которая оприделяет кодировку сайта-->
+	<title>HTML</title>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" лучше писать это><!--это кадировка сайт то есть на каком язике мы пишем сайт charset это такая штука которая оприделяет кодировку сайта-->
+<meta name="author" content="Alex Mazurok">
+<meta name="description" этот атрибут нужен для того чтобы писать описание сайта но так то он нигде не отображаеться это чисто для поисковых роботов content="Тестовый сайт" сюда пишеться описание и рекомендуеться от 100 до 200 символов>
+<meta name="keywords" ключевые слова блягодаря какому поисковой робот искал но сейчас уже не так сильно влияетно лучше писать для удобства content="тестовый, сайт, проверка" сюда надо вписать эти слова>
+<link линк существует для того чтобы поключать стили css rel="stylesheet" указываем что это за стили href="css/main.css" от куда мы берем стиль сss type="text/css" здесь мы обозначаем что пишим на css>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery,main.js" здесь мы указываем путь к скрипту здесь пока самая последняя аджакс библеотека установлена но скорее всего есть уже и больше></script>
+</head>
+<body>
+	<a href="" name="Begin"></a>
+	<header>
+		Шапка
+	</header>
+	<article>
+	Hello World!
+	<!--таким способом можно делать коментарии-->
+	<h1>Тег для заголовков 1</h1>
+ 	<h2>Тег для заголовков 2</h2>
+ 	<h3>Тег для заголовков 3</h3>
+ 	<h4>Тег для заголовков 4</h4>
+ 	<h5>Тег для заголовков 5</h5>
+	<a name="exemple"></a>
+ 	<h6>Тег для заголовков 6</h6>
+
+  <p>Это тег <b>для текстов которые <strike>будут выделины</strike> <i>абзацом</i></b> </p>
+  <p>Это тег <strong>для текстов которые <u>будут выделины</u>  <em>абзацом</em></strong></p>
+ <p><abbr этот тег пишет чтавит точечки под эти словм title="Hyper Text Mark-up Language">HTML</abbr></p>
+ <code>Это тег для кода как &lt;?php echo "Hello World!"&gt; это если мы хотим написать с < то пишем амперсант лт и закрываем амперсант гт</code><!--title это абриатура для этого текста в которо мы раскрываем значения вот это абриатуры если мы наведем на этот текст то абривиатура покажеться но здесть можно написать все что  угодно-->
+ <address>usa, state of Washington</address><!--это тег выделяет специфичним шрифтом-->
+ <p><strong><em><strike><u>это текст пробный</u></strike></em></strong></p>
+ <small>Текст который будет в этом теге будет маленьким</small>
+ <br><!--это тегдля того чтобы сделать линию-->
+ 	<a name="Bird"></a>
+ <big>Этот текст будет БОЛЬШИМ</big>	
+ <pre>
+ 	Здесть 
+ 	показываю тег пре и как          он работает</pre>
+ 	<blockquote id="wer" cite="html://google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore saepe enim similique, temporibus rerum, iusto quo illo doloribus magni. Hic libero, similique cupiditate? этот тег выделяет цитатау по 40 пк отступ с края + у нее есть атрибут в нем мы говорим от куда мы взяли этот текст и он не как не отображает но помагает роботу и говорите типо что вы не украли этот текст а цитируите</blockquote>
+ 	<p>dchghsksbklh<q cite="здесть тоже мы можем поставить ссилку но в самом сайте ничего не изменяться">ЭТОТ ТЕГ БЕРЕТ ТЕКСТ В СКОБКИ НО можно и сомому написать но лучше с тегом</q></p>
+ 	<hr />
+ 	<br /><!--теперь эти теги записываються так но у меня работают и если просто их написать без /-->
+ 	<p align="right">Здесь я показываю атрибут <br> align <br /> который показывает где этот текст лежит то есть нахождение текста right; centre; justify- это ставит по ширене</p>
+<center>		
+ 	<a href="#Centers">
+ 		<input style="background-color:darkblue; color: lightpink" type="button" value="Отправители">
+ 	</a>
+ </center>
+ 	<center>Этот тег делает текст по центру</center>
+ 	<nobr>ЭТО ТЕГ ЧТОБЫ ТЕКСТ ПИСАЛСЯ БЕЗ Каких либо пропусков Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quasi sit consectetur maxime iusto labore hic beatae delectus fuga, eveniet, id, magni. Vel itaque saepe distinctio incidunt, nemo, optio nihil.</nobr>
+ 	<!--Списки-->
+ 	<ol start="0" reversed="reversed" но можно просто писать тру и так везде или фалс><!--пронумерованый лист и в каждом из этихх тегов надо еще тег писать-->
+ 		<!--у этого тега есть несколько атрибутov: type- где мы говорим какими онидолжны быть и мы можем как всем сразу это поставить так и по одельности star- с какого значения будет начинаться наш список, reversed- делает список наоборот-->
+
+ 			<li type="a" start="4">
+ 			1 пукт примера
+ 			</li>
+ 			<li type="I">
+ 			2 пукт примера
+ 			</li>
+ 			<li type="i">
+ 			3 пукт примера
+ 			</li>
+ 			<li type="A">
+ 			4 пукт примера
+ 			</li>
+ 			<li type="a">
+ 			5 пукт примера
+ 			</li>
+ 	</ol>
+ 	<ul>
+ 			<li type="disc">Здесь я использывал юл и он делает список с точек и в этом теге нету атрибутов как start и revesed зато здесь есть атрибут как атрибут как type</li>
+ 			<li type="circle">Белеберда чтобы показать какие есть кружочки и щтучки в тайпе этого тега</li>
+ 			<li type="square">Белеберда чтобы показать какие есть кружочки и щтучки в тайпе этого тега</li>
+ 	</ul>
+ 
+ 	<dir>
+ 			<li>Этот тег не много сдвигает список вовторых этот уже мало кто использует вместо него используют ul</li>
+ 			<li>Этот тег не много сдвигает список вовторых этот уже мало кто использует вместо него используют ul</li>
+ 			<li>Этот тег не много сдвигает список вовторых этот уже мало кто использует вместо него используют ul</li>
+ 	</dir>
+ 	<!--ЭТОТ УРОК БУДЕТ ПОСВЯЩЕН АТРИБУТОМ-->
+ 	<p align="center"><strong>АТРИБУТ</strong> <em>это такая вещь которая меняет значение тега</em> <i>по умолчанию на свое другое значение</i> для самого тега п дохрена атрибутов</p>
+ 	<ol type="A">
+ 		<li>	
+				123
+ 		</li>
+ 	</ol>
+ 	<!--Сылки-->
+ 	<ul>
+ 			<li>
+ 				<a href="file:///E:/%D0%9C%D0%BE%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%20sublint%20text3/4%20html/index.html">Это тег на ссылку которая перенаправляет нас не создавая другое окно то есть не закрывая наш сайт сам тег а ничего не делает нам нужно написать в него атрибут хреф и вставить ссылку с друго сайта</a>
+ 			</li>
+ 			<li type="circle">
+ 				<a href="file:///E:/%D0%9C%D0%BE%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%20sublint%20text3/4%20html/index.html" target="_blank">
+ 					это ссылка с атрибутом таргет и в нем можно написать blank - открывает новую вкладку с сайтом иможно писать без _, parent, self ,top 
+ 				</a>
+ 			</li>
+ 				<li type="square">
+ 				<a href="file:///E:/%D0%9C%D0%BE%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%20sublint%20text3/4%20html/index.html" target="_parent">
+ 					_parent устарели можно не исрользывать
+ 				</a>
+ 			</li>
+ 					<li>
+ 						<a href="file:///E:/%D0%9C%D0%BE%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%20sublint%20text3/4%20html/index.html" target="_self">
+ 												_self стоит по умолчанию
+ 						</a>
+ 				</li>
+ 				<li>
+ 				<a href="file:///E:/%D0%9C%D0%BE%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%20sublint%20text3/4%20html/index.html" target="_top">
+ 					_top усатрели можно не использывать
+ 				</a>
+ 			</li>
+ 			<li>
+ 					<a href="file:///E:/%D0%9C%D0%BE%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%20sublint%20text3/4%20html/index.html" target="_blank" title="Это функция при наведении мишкой отображает что это">
+ 						Фуекция title наведи на меня и он подходит к любому тегу это функция подсказка
+ 					</a>
+ 			</li>
+ 			<li>
+ 						<p title="Это пример">
+ 							Это при мер что title подходит к любому тегу
+ 						</p>
+ 			</li>
+ 			<li>
+ 					<a href="#exemple">Это ссылка которая помогает нам орентироваться на сайте то есть мы пишем куда нас перенаправить #-означает что перезагрузки не будет в теге надо написать хреф и в  нем поставить # и написать название а потом ставим ссылку там где мы хотим очутиться в нашем коде и пишем name="здесь мы пишем без решотки названия" эта ссылку я постаавил на ЗАГОЛОВОК 6 пройди верх кода и ты поймешь как оно работает и чтобы найти на сайте нажми и ссылка тебя перенапривит и то что в ней будет в самом верху сайта</a>
+ 			</li>
+ 			<li type="A" title="JHGJHJ:HGJFHJGHSGDJGKJL:KL:KLJFHJDHHHFGHJ"> 
+ 				<a href="mailto:sasamazurok@gmail.com">
+ 					это ссылка для того чтобы перенаправить вас на почту но она не откроеться так как у меня проблема скопмпом а так ссылк рабочая
+ 				</a>
+ 			</li>
+ </ul>
+<!--Тег для того чтобы изображать картинки-->
+<a href="" name="center"></a>
+<a href="#Bird">
+		<img title="Это просто так я експерементирую" src="https://itproger.com/img/news/flappy_bird_bird.png" alt=""><!--здесь так же можно закрыть / а можно без-->
+</a>
+<br>
+
+	<!--<style>
+		*{
+			margin: 0;это для того чтобы не было краев
+		}
+	</style>-->
+  <!--я не много зашел на перед но это тег стайл и в нем маргин что означает отсуп от края я написал 0 то есть картинка будет на весь сайт -->
+	<img style=" margin: 0; " border="10px" title="Это красивая картинка" src="https://img1.liveinternet.ru/images/attach/c/10/108/646/108646009_1349927848_krasivyefotoprirody29.jpg" есть такие атрибуты которые увеличат и уменьшат картинку width="100%" height="1200px" можно писать пк а пожно не писать и можно еще в процентах изменять и их лучше писать в стилях а не здесь alt="пвалропаяпаправ"><!--эсть атрибут альт и если в браузере не показываеться картинка тогда она заменяеться текстом и для примера в src я сделал ошибку-->
+	<img
+	align="но лучше это все писать в стайл"   
+	src="https://img1.liveinternet.ru/images/attach/c/10/108/646/108646009_1349927848_krayefotoprirody29.jpg" есть такие атрибуты которые увеличат и уменьшат картинку 
+	alt="красивые виды"
+	border="10px" 
+	><!--эсть атрибут альт и если в браузере не показываеться картинка тогда она заменяеться текстом и для примера в src я сделал ошибку и он заменит картинку на надпись но лучше писать всегда так как не всех браузерах отображаеться есть атрибут border- это атрибут для того чтобы обводить что-то но его лучше не здесь задаватьа в стилях но это потом в следующих уроках и здесь так же есть атрибут align -->
+	<!-- Таблицы но это довольно древний способ создания сайтов им уже почти никто не пользуеться так что лучше не пользываться -->
+<table border="1">
+	<caption>
+		Это тег для названия таблицы
+	</caption>
+<tr>
+	<!-- это тег для создания таблици в ряд и он сам выделяет-->
+	<th>
+<i>Это тег для заголовка</i>
+	</th>
+	<th>
+<small>Это тег для заголовка</small>
+	</th>
+	<th>
+<big>Это тег для заголовка</big>
+	</th>
+</tr>
+<tr>
+<td>	это тег который создает столб если один из них удалить то будет просто пустой столб</td>
+<td>	это тег который создает столб</td>
+<td>	это тег который создает столб</td>
+</tr>
+<tr>
+<td>	это тег который создает столб</td>
+<td>	это тег который создает столб</td>
+<td>	это тег который создает столб</td>
+</tr>
+<tr>
+<td>	это тег который создает столб</td>
+<td>	это тег который создает столб</td>
+<td>	это тег который создает столб</td>
+</tr>
+<tr>
+<td>	это тег который создает столб</td>
+<td>	это тег который создает столб</td>
+<td>	это тег который создает столб</td>
+</tr>
+</table>
+<br>
+<br>
+<table border="1" cellpadding="7" это атрибут для отступов от краев cellspacing="0" это атрибут для пробелов у таблички>
+	<tr>
+		<td colspan="2" это атрибут говорит заранее и помогает указать сколько здесь будет столпцов чтобы лишний не вилезал 
+		bgcolor="blue" это атрибут для фона и можно и палитру цветов испоьзывать
+		 align="center" этот атрибут для того чтобы показать где он должен находиться сверху справа вниз влево><span style=" font-style: italic;color: red;font-size: 24px;">
+			Это пример еще одной таблицы и она должна быть красивее так ка в ней исрользуються атрибуты
+			</span> 
+		</td>
+	<tr>
+		<td valign="middle" width="2%" align="center">Ячейка1</td>
+		<!--valign="top" это атрибут означет то где распологаеться текстотносительно вертикали здесь так же можно ботом центр топ и middle-->
+		<td width="98%" height="45px" valign="bottom">Ячейка2</td>
+	</tr>
+</table>	
+<!--<div><span>-->
+	<hr>
+	<hr> 
+	<div style=" position: bottom; width:48%; left:100px; top:0px; эти два мини тега работать не будет так как работали они только с absolute а не с <bottom> font-family: Verdana; font-size:10pt;border-style:groove; border-width:30px;border-color:yellow; padding:4px;">Этот тег использывать без ксс тупо и это тег который помогает создать блок если его приминять просто так то он будет как абзац. использывать его со стилями <hr>
+	<span style=" left:100px;font-style: italic; color: red; padding: 4px;">
+		Этот тег span тоже только со стилями приминяеться<br> Блгагодаря ему мы можем менять сам текст
+	</span>
+</div>
+<br>
+<!--Поля ввода данных но отправка идет уже на php-->
+<form нужен для того чтобы формиравать саму формочку name="test"здесь мы указываем на имя этой формачки action="" это атрибут говорит где будет обрабатываться данные но поскольку данные у нас не будут обрабатываться сейчас мы оставим поле пустым есили оставить его пустым тоэто означает что информация будет обрабатываться на этом сайте method="" здесь мы говорим метод он будет принимать без отправки в юрл и с отправки это пчп. Но пока что это ничего не важно без пчп><label этот тег нужен чтобы написать надпись здесь for="Test" этот тег нужен для того обозначит для кого поля мы испоьзуем лабел и как раз с id это название input и благодаря этому при нажатии на названия сразу перехедишь в поле и пишиш>Введите ваше имя:</label><input делает поле type="text" это атрибут котрым задаешь чем будет твое поел батон-кнопка, текст-текст, вик-неделя, дейт-дата рождения, тд value="" этот атрибут пишет в этом поле но надо удалять текс чтобы его написать лучше не использывать вместе со следующим атрибутом так как этот атрибут будет перекрывать placeholder="Этот атрибут пишет прозрачный текст" name="name" внизу я написал что это в радио пол Женский и Мужской id="Test"	атрибут на который можно будет ссылаться не много не понял для чего он title="подсказка" maxlength="30" этот атрибут задает масимальную длину слов в поле
+><br><br>
+<a name="Centers"></a>
+<label for=" Datetime-local"> Datetime-local: </label><input id=" Datetime-local" type="datetime-local">
+<label for="Button"> Button: </label><input  id="Button" type="button" buuton для джава скрипта value="Отправить" placeholder="Нажми" title="Кнопка" ><br>
+<label for="Week"> Week: </label><input id="Week" type="week">
+<br>
+<label for="Url"> Url: </label><input id="Url" type="url" этот мини атрибут помагает браузеру>
+<label for="Phone">Телефон:</label><input id="Phone" type="tel"><!--вообщем миниатрибути которие не отличаються от текс-обычный помгат браузеру опредилить и если написано что например сюда надо телефон вписывать а ты вписал не телефон то браузер не будет обрабатывать<--><br>
+<label for="RANGE">RANGE</label><input id="RANGE" type="range">
+<br><br>
+<!--https:// - означает что сайт защищен-->
+<label for="radio">Radio</label><input id="radio" type="radio"><br>
+<label for="sex">Мужской:</label><input id="sex" name="sex" type="radio"><br>
+<label for="Female">Женский:</label><input id="Female" name="sex" благодаря этому атрибуту мы из двох можем выбрать только один type="radio">
+<br><br>
+<label for="">Password</label><input type="password" этот миниатрибут если мы в нем что-то напишем то оно  будет зашифровано *>
+<label for="">Number</label><input type="number"><br>
+<label for="">File</label><input type="file">
+<label for="">Email</label><input type="email"><br>
+<label for="С">Color</label><input id="C" type="color" при отправке данных будет высвечиваться и мы будем его разшифровывать><br>
+<label for="s">Checkbox</label><input id="s" type="checkbox">
+
+<label for="">Submit</label><input submit для пчп и происходит перезагрузка style="background-color: pink;"type="submit" value="Отправить">
+<label for="">Button</label><input style=" width: 100px; background-color: blue; color:red;" value="Отпрвить" type="button">
+<label for="">Reset</label><input type="reset" он полонстью очщищает то что написано нажато можно сделать експеримент на самом сайте style="background-color: black; color: white" >
+<form>
+	<ol type="A" style="color: red" align="center">
+	<li>
+<a href="#Begin"><input type="button" style="color: green; background-color: pink" value="Начало странички"></a>
+</li>
+<br>
+<li>
+	<a href="#center">
+	<input type="button" для джава скрипт и не происходит с перезагрузкой страници сходит переstyle=" color: red; background-color: black" value="Cередина страницы"> 
+</a>
+</li>
+		<a href="" name="end">
+</a>
+<br>
+<li>
+	<a href="#End">
+	<input type="button" style="color:blue; background-color: yellow;" align="center" value="Конец страницы">
+</a>
+</li>
+</ol>
+</form>
+</form>
+<!--Textarea and buuton-->
+<textarea placeholder="это тег создает поле но в котором уже можно и переносить строки и вообще оно большое" name="" id="" cols="45" какая будет высота rows="2" какая будет высота на англ.(ряд) но легче их всез задавать в стилях></textarea>
+<form action="" method="post">
+	<p><b>
+Введите ваш отзыв:		
+	</b></p>
+	<textarea name="text" id="" cols="45" rows="2"></textarea>
+	<input type="submit" value="Отправить"><br>
+	<button style="background-color: red; color:blue;">Это тег кнопка которая и котрая загружает при перезагрузки сайта</button>
+</form>
+<!--Select+Option-->
+<form action="">
+<select name="" id="">
+		<option value="" сюда мы пишем название и это значение будет приминять то что мы напишем в опщн и  при отправки данных будет задействено именно оно>Example1</option>
+		<option selected="selected"html5 требует такого уточнения этот отрибут говорит какой из опшинов будет стоять при загрузке сайта по умолчанию value="">Exemple2</option>
+</select></form><br><hr>
+<hr>
+<form action="" method="post">
+<select style="background-color: purple; color: white" name="" id="">этот тег делает список с выбором
+<option value="">Этот тег дает право писать в теге селект</option>
+<option value="">Этот тег позволяет писать в теге селект</option>
+<option value="">Этот тег не позволяет писать в теге селект</option>
+<option style="background-color: blue" value="">...</option>
+<option value="" style="background-color: yellow"></option>
+<option style="background-color: red;" value=""></option></select>
+<br></select></form><br>
+
+	<form action=""это как пример так как пока мы не будем ссылаться на что-то method="post">
+	 <select size="4" multiple="multiple" этот атрибут позволяет выбирать несколько значений и позваляет сделать крутилку з боку как на всех сайтах name="hero[]" id="">
+	 		<option value="" disabled="disabled" этот атрибут пишеться для того чтобы отсойденить эту надпись от остальных и не выбирать >Выберите героя</option>
+	 		<option value="Чебурашка">Чебурашка</option>
+	 		<option selected="selected" value="Крокодил Гена">Крокодил Гена</option>
+	 		<option value="Шапокляк">Шапокляк</option>
+	 		<option value="Крыса Лариса">Крыса Лариса</option>
+	 <br>
+	 <input type="submit">
+	</select></form>
+	<!--Эти теги новые и есть только в штмл5-->
+	<br>
+	<header этот тег говорит то что  внем будет шапка сайта>
+		Шапка
+	</header>	
+	<menu он подобен списку ul ol>
+		<li>Something</li>
+		<li>Something</li>
+	</menu>
+	<article этот тег указывает что здесь статья новость>
+	Статтья, новость, пост.....
+<p style="color: blue">
+	Efill 65 im blue<br> 
+	<audio style="background-color: black;" это тег который вызывает звуковую дорожку controls="controls" этот атрибут важен он показывает чтомы будем работать с какой-то мелодией autoplay="true"этот атрибут автоматически запускает музыку но у меня почему то не работает loop="loop" этот тег запускает опять музыку после окончания align="left">
+		<source src="audio/eiffel-65_-_blue-da-ba-dee.mp3" но можно не писать в этом теге а срузу в аудио>
+	</audio>
+</p>
+<p style="color: blue">
+	Efil65-80's stars <br>
+	<audio style="background-color: purple" src="audio/Eiffel 65 - 80s Stars (Album Version).mp3" controls="contols" loop="true"></audio>
+</p>
+<p style="color: blue">
+	Eiffel 65 - Move Your Body <br>
+	<audio style="background-color: red" src="audio/Eiffel 65 - Move Your Body [midi-mp3.org].mp3" loop="true" controls="true"></audio>
+</p>
+<p style="color: blue">
+	Scatman John - Im the Scatman<br>
+	<audio style="background-color: green" src="audio/Scatman John - Im the Scatman.mp3" loop="true" controls="true"></audio>
+</p>
+
+<video controls="true">
+	<source src="video/Example.3gp">	
+</video>
+</article>
+<aside>Бокова панель</aside>
+	<footer этот тег для низа сайта>
+		Низ сайта
+	</footer>
+	<hr>
+	<hr>
+	<!--Два нужных тега sub sup-->
+	<p>H<sub этот тег позволяет сделать меньше текс чем главный>2</sub>O</p>
+ <mark>4<sup этот тег позваляет делать текст выше главного>2</sup></mark>
+ <br><br>
+ <!--еще 5 тегов которые облегчают рооботу с html-->
+ <details этот тег делает нам место которое скрыто и его можно открыть без использывания джава скрипта>
+ 	<summary style="background-color: black; color: white">этот тег как заголово к детеилс</summary>
+ 		<p style="color: red">Пример того что здесь может быть</p>
+ </details>
+ <mark>С помощью этого тега можно маркеровать что-то. Обычно желтим но можно поменять</mark>
+<br>
+	<ruby>
+		Программист<rt>
+			этот тег делает надпись над главным текстом
+		</rt>
+		Кому?<rt>
+			вапрос
+		</rt>
+	</ruby><br>
+	<progress этот тег делает загрузку max="100" этот атрибут мксимального значения value="100" здесь велю означает на сколько загрузилось >Загружено на <!-- это здесь не буде отобржать но если загрузка не будет отображаться то будет это с 50% такая же ситуация--><span id="value">50</span>%</progress>
+	<form oninput="r.value=(c.value/2.54).toFixed(2)" в этот атрибут надо вводить данные а в миниатрибуте пишеться задача на решение этой задачи а туфиксд округаляет значение до 2 единиц, велйю это значение и в нем пишеться математические действия я скоротил резалт до р чтобы показть что там можно любое название в см мы тоже можем писать все что угодно это название а потом обьязательно писать велйю- значение которое мы делим на то число action="">
+		<p>Введите длину в сантиметрах:
+		<input type="number" name="c" autofocus="true">
+	</p>
+		<p>Длина в дюймах:<output этот тег выводит данние, значения name="r">0</output></p>
+	</form>
+	<input list="datalist">
+	<datalist id="datalist">
+		<option>Fuck</option>
+		<option>Suck</option>
+		<option>Mom</option>
+		<option>Weather</option>
+		<option>Dollphin</option>
+		<option>rap</option>
+	</datalist>
+	<div>
+		<select>
+			<optgroup label="iuguyg">
+				<option>guyg</option>
+			</optgroup>
+			<optgroup label="uiuytuyt">
+				<option>u96856xg</option>
+			</optgroup>
+		</select>
+	</div>
+<div>
+	<p>lokjfsg sxlugvflyhtgsfclhgvflusfvglygtfly<wbr>fhckftgcxkdxdyhdclh.flctgxgfljgvgljfghjglhjgcghljgsslcffgcfglycf<wbr>hfhkytgfgcljgluj gcujegsdljyguyfgvup;gsfujyfguygupgupfyguoyjg</p>
+	<section>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBW_DKY2789OSK0iW6tRCknPsSiyHOB9Ajw&usqp=CAU" usemap="#map" alt="">
+		<map name="map">
+			<area shape="rect" - прямоуольник coords="0,0,70,120" href="https://www.youtube.com/watch?v=yAu155q9Vsg">
+			<area shape="rect" - прямоуольник coords="30,0,70,120" href="">
+			<area shape="rect" - прямоуольник coords="60,0,70,120" href="https://www.youtube.com/watch?v=yAu155q9Vsg">
+			<area shape="rect" - прямоуольник coords="120,0,70,120" href="https://www.youtube.com/watch?v=yAu155q9Vsg">
+			<area shape="rect" - прямоуольник coords="180,0,70,120" href="https://www.youtube.com/watch?v=yAu155q9Vsg">
+			<area shape="rect" - прямоуольник coords="240,0,70,120" href="https://www.youtube.com/watch?v=yAu155q9Vsg">
+		</map>
+	</section>
+	<section>
+		<meter id="pgfjkp" min="0" max="100" low="33" high="66" optimum="80" value="10"></meter>
+	</section>
+</div>
+	<a href="" name="End"></a>
+	</article>	
+	<footer>
+		<center>
+		<small>
+	  <big><big> <srong> <h1 id="a"><span id="qwertysad">Поздравляю!</span></h1><big><big><big><big><p id="R"><span id="rex">Э</span><span id="w">т</span><span id="e">о</span><span id="r">к</span><span id="t">о</span><span id="y">н</span><span id="u">е</span><span id="i">ц</span> <span id="o">H</span><span id="p">T</span><span id="f">M</span><span id="s">L</span><span id="d">5</span></p></big></big></big></big></srong></big></big>
+		</small>
+		 	</center>
+	</footer>	
+</body>
+</html>

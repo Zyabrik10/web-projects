@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Some Restaurant</title>
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="animation/fm.revealator.jquery.css">
+    <script src="js/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="js/animation/fm.revealator.jquery.js"></script>
+
+    <!-- Normolize styles -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Own styles -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body id="top">
+    <header class="header header-fade">
+        <div class="container header-container">
+            <a class="header-logo reset-link" href="./">
+                <svg width="139" height="139" viewBox="0 0 137 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./img/logos.svg#logo"></use>
+                </svg>
+            </a>
+            <nav class="header-nav" aria-label="Main">
+                <ul class="header-nav-list reset-list">
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="#catalog">catalog</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">recipes</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">contacts</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">about</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">basket</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="info-box">
+                    <div class="info-side">
+                        <h1 class="header-text-fade hero-title reset-title revealator-slideright">
+                            Lorem Ipsum is simply dummy <br>
+                            text I want to fuck.
+                        </h1>
+                        <p
+                            class="header-text-fade hero-paragraph reset-paragraph revealator-slideright revealator-delay2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
+                            the
+                            leap into electronic
+                        </p>
+                        <ul class="hero-buttons-list reset-list">
+                            <li class="hero-buttons-item reset-button revealator-zoomin">
+                                <button class="gen-btn gen-btn-fr reset-button" type="button">buy now</button>
+                            </li>
+                            <li class="hero-buttons-item revealator-zoomin revealator-delay2">
+                                <a class="gen-btn gen-btn-thr reset-link" href="./">contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="hero-preview-img-list reset-list header-bottle-fade">
+                        <li class="hero-preview-img-item">
+                            <img class="hero-preview-img" src="./img/index/bottle2.png" alt="preview bottle"
+                                loading="lazy" height="600">
+                        </li>
+                        <li class="hero-preview-img-item">
+                            <img class="hero-preview-img" src="./img/index/bottle2.png" alt="preview bottle"
+                                loading="lazy" height="500">
+                        </li>
+                    </ul>
+                </div>
+                <a class="hero-link-down reset-link" href="#main-content">
+                    Learn more
+                    <svg class="hero-link-down-arrow" width="26" height="24" viewBox="0 0 26 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="./img/logos.svg#arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="catalog" id="catalog" data-anchor>
+            <div class="container catalog-container" id="main-content">
+                <h2 class="catalog-title reset-title revealator-fade">catalog</h2>
+                <div class="catalog-info">
+                    <img class="catalog-info-preview" src="./img/index/bottle2.png" alt="bottle" height="600">
+                    <div class="calatlog-info-box">
+                        <h3 class="catalog-info-box-title reset-title revealator-fade">Title</h3>
+                        <p class="catalog-info-box-paragraph reset-paragraph revealator-fade">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only
+                            five
+                            centuries, but also the leap into electronic
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only
+                            five
+                            centuries, but also the leap in...
+                        </p>
+                        <button class="catalog-more-button reset-button revealator-slideup">
+                            <svg width="50" height="50" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg">
+                                <use href="./img/logos.svg#arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog-order-button gen-btn gen-btn-sc reset-button"
+                            type="button">order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <a class="footer-logo reset-link" href="./">
+                <svg width="139" height="139" viewBox="0 0 137 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./img/logos.svg#logo"></use>
+                </svg>
+            </a>
+            <nav class="footer-nav" aria-label="Main">
+                <ul class="footer-nav-list reset-list">
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link reset-link" href="#catalog">catalog</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link reset-link" href="./">recipes</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link reset-link" href="./">contacts</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link reset-link" href="./">about</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link reset-link" href="./">basket</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav-link reset-link" href="./">login</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer-ph-num-list reset-list">
+                <li class="footer-ph-num-list">
+                    <a class="footer-contacts reset-link" href="tel:+1111111111">111-111-11-11</a>
+                </li>
+                <li class="footer-ph-num-list">
+                    <a class="footer-contacts reset-link" href="tel:+2222222222">222-222-22-22</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="reset-link" href="#top" id="anchor">top</a>
+
+    <script type="text/javascript">
+        Revealator.scroll_padding = '100';
+    </script>
+    <script type="text/javascript">
+        Revealator.effects_padding = '-100';
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/anchor.js" type="module"></script>
+    <script src="./js/animation.js" type="module"></script>
+</body>
+
+</html>

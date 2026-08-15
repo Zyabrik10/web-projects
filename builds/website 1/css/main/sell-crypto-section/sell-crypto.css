@@ -1,0 +1,32 @@
+section.sell_nft {
+  margin-top: 160px;
+}
+
+section.sell_nft h2 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+section.sell_nft .cards .card {
+  width: 100%;
+  max-width: 384px;
+  text-align: center;
+  background: #272d37;
+  padding: 56px 32px;
+  border-radius: 16px;
+}
+
+section.sell_nft .cards .card h3 {
+  margin-top: 48px;
+}
+
+section.sell_nft .cards .card p {
+  margin-top: 24px;
+}

@@ -1,10 +1,15 @@
 .input {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #000;
+  padding: var(--global-padding);
+  border-radius: var(--global-radius);
+  border: 2px solid var(--border-color);
   outline: 2px solid transparent;
 
   transition: outline 0.3s;
+
+  width: 100%;
+
+  background-color: rgb(from var(--main-color) r g b / 0.5);
+  backdrop-filter: blur(var(--global-blur));
 }
 
 .input:hover,
@@ -16,6 +21,8 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+
+  width: 100%;
 }
 
 .input-text-label .required {
@@ -50,4 +57,9 @@
 .input-checkbox.checked {
   background-color: rgb(0, 93, 165);
   color: white;
+}
+
+.textarea {
+  width: 100%;
+  resize: vertical;
 }

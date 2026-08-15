@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Кнопки с классным эфектом</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.helper {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+		}
+
+		.button {
+			position: relative;
+			width: 300px;
+			height: 60px;
+			border: 4px solid #3f3adf;
+			padding: 10px;
+			font-size: 50px;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.button:hover {
+			color: #ffffff;
+		}
+
+		.button::before,
+		.button::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: -100%;
+			top: 0;
+			background-color: #3f3adf;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		.button::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 100%;
+			background-color: #3f3adf;
+			transition-delay: .2s;
+		}
+
+		.button:hover::before {
+			left: 0;
+			opacity: .4;
+		}
+
+		.button:hover::after {
+			top: 0;
+			opacity: .6;
+		}
+
+		.before-after {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: none;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.before-after::before,
+		.before-after::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: -100%;
+			background-color: #3f3adf;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		.before-after::after {
+			left: 100%;
+			top: 0;
+		}
+
+		.before-after:hover::before {
+			top: 0;
+			opacity: .8;
+			transition-delay: .6s;
+		}
+
+		.before-after:hover::after {
+			left: 0;
+			opacity: .6;
+			transition-delay: .4s;
+		}
+
+
+
+		/*  button-2   */
+
+		.button-2 {
+			position: relative;
+			width: 300px;
+			height: 60px;
+			border: 4px solid #3f3adf;
+			padding: 10px;
+			font-size: 50px;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.button-2:hover {
+			color: #ffffff;
+		}
+
+		.button-2::before,
+		.button-2::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: -100%;
+			top: 0;
+			background-color: #3f3adf;
+			transition: .6s;
+			z-index: -1;
+		}
+
+		.button-2::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 100%;
+			background-color: #3f3adf;
+		}
+
+		.button-2:hover::before {
+			left: 0;
+			opacity: 1;
+			transition-delay: 0s;
+		}
+
+		.button-2:hover::after {
+			top: 0;
+		}
+
+		.before-after-2 {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: none;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.before-after-2::before,
+		.before-after-2::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: -100%;
+			background-color: #3f3adf;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		.before-after-2::after {
+			left: 100%;
+			top: 0;
+		}
+
+		.before-after-2:hover::before {
+			top: 0;
+		}
+
+		.before-after-2:hover::after {
+			left: 0;
+		}
+
+
+
+		/* button-3 */
+
+		.button-3 {
+			position: relative;
+			width: 300px;
+			height: 60px;
+			border: 4px solid #3f3adf;
+			padding: 10px;
+			font-size: 50px;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.button-3:hover {
+			color: #ffffff;
+		}
+
+		.button-3::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: -100%;
+			top: 0;
+			background-color: #3f3adf;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		.button-3::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 100%;
+			background-color: #3f3adf;
+		}
+
+		.button-3:hover::after {
+			top: 0;
+			opacity: .6;
+		}
+
+		.before-after-3 {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: none;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.before-after-3::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: -100%;
+			background-color: #3f3adf;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		.before-after-3:hover::before {
+			top: 0;
+			opacity: 1;
+			transition-delay: .3s;
+		}
+
+
+
+		/* button-4 */
+
+		.button-4 {
+			width: 300px;
+			height: 60px;
+			padding: 10px;
+			border: 4px solid #3f3adf;
+			color: #3f3adf;
+			text-align: center;
+			font-size: 50px;
+			position: relative;
+			transition: all .5s linear;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		.button-4:hover {
+			color: white;
+		}
+
+		.button-4:before,
+		.button-4:after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: #3f3adf;
+			top: 0;
+			left: -100%;
+			opacity: .5;
+			transition: all .5s ease-in-out;
+			z-index: -1;
+		}
+
+		.button-4:after {
+			opacity: 1;
+			transition-delay: .2s;
+		}
+
+		.button-4:hover:before,
+		.button-4:hover:after {
+			left: 0;
+		}
+
+		/* button-5 */
+
+		.button-5 {
+			position: relative;
+			width: 300px;
+			height: 60px;
+			border: 4px solid #3f3adf;
+			padding: 10px;
+			font-size: 50px;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.button-5:hover {
+			color: #ffffff;
+		}
+
+		.button-5::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: -100%;
+			top: 0;
+			background-color: #3f3adf;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		.button-5:hover::before {
+			left: 0;
+		}
+
+		.before-after-5 {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: none;
+			color: #3f3adf;
+			text-align: center;
+			cursor: pointer;
+			transition: .5s;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.before-after-5::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 100%;
+			top: 0;
+			background-color: #3f3adf;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		.before-after-5:hover::after {
+			left: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="helper">
+		<div class="before-after">
+			<div class="button">BUTTON</div>
+		</div><br>
+		<div class="before-after-2">
+			<div class="button-2">BUTTON</div>
+		</div><br>
+		<div class="before-after-3">
+			<div class="button-3">BUTTON</div>
+		</div><br>
+		<div class="before-after-4">
+			<div class="button-4">BUTTON</div>
+		</div>
+		<br>
+		<div class="before-after-5">
+			<div class="button-5">BUTTON</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,11 +1,12 @@
 import { CSSProperties, useId } from "react";
-import styles from "./Input.module.css";
 import { Check } from "lucide-react";
+
+import styles from "./Input.module.css";
 
 type Props = Readonly<{
   value: boolean;
   setValue: (val: boolean) => void;
-  onChange?: null | ((event: unknown) => void);
+  onChange?: null | ((event: unknown, e: unknown) => void);
   className?: string;
   label?: string;
   size?: string;
@@ -59,9 +60,9 @@ function Checkbox({
       }}
       id={id}
       className={`${styles.input} ${styles["input-checkbox"]} ${value ? styles.checked : ""} ${className}`}
-      onClick={(e: unknown) => {
+      onClick={(e) => {
         if (onChange && typeof onChange === "function") {
-          onChange(e);
+          onChange(!value, e);
         } else {
           setValue(!value);
         }

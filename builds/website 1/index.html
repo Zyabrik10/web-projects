@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Panda NFT</title>
+	<link rel="stylesheet" href="./css/fonts/style.css">
+	<link rel="stylesheet" href="./css/variables/style.css">
+	<link rel="stylesheet" href="./css/general/style.css">
+	<link rel="stylesheet" href="./css/header/style.css">
+	<link rel="stylesheet" href="./css/main/style.css">
+	<link rel="stylesheet" href="./css/footer/style.css">
+	<link rel="stylesheet" href="./css/animation/fm.revealator.jquery.css">
+	<script src="js/jQuery/jquery-1.11.3.min.js"></script>
+	<script src="js/animation/fm.revealator.jquery.js"></script>
+	<style>
+		.dec-ball {
+			position: absolute;
+			width: 638px;
+			height: 444.28px;
+			background: rgba(30, 80, 255, 0.75);
+			filter: blur(350px);
+		}
+
+		.ball-1 {
+			top: 0;
+			left: 10%;
+			transform: translateY(-50%);
+		}
+
+		.ball-2 {
+			top: 600px;
+			left: 60%;
+			height: 587.33px;
+		}
+
+		.ball-3 {
+			top: 2000px;
+			left: 0;
+			transform: translateX(-90%);
+		}
+
+		.ball-4 {
+			top: 4500px;
+			left: 80%;
+			height: 587.33px;
+		}
+
+		.ball-5 {
+			top: 5600px;
+			left: 0;
+			width: 400px;
+			height: 400px;
+			transform: translateX(-100%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="ball-1 dec-ball"></div>
+	<div class="ball-2 dec-ball"></div>
+	<div class="ball-3 dec-ball"></div>
+	<div class="ball-4 dec-ball"></div>
+	<div class="wrapper">
+
+		<!-- <HEADER> -->
+		<header class="revealator-fade">
+			<a href="#" class="website-logo">
+				<img src="./img/header/logo.svg" alt="website logo" width="43" height="40">
+				<span class="name">
+					Panda NFT
+				</span>
+			</a>
+			<nav class="navigation">
+				<ul>
+					<li>
+						<a href="#">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Discover
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Docs
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Blog
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							About Us
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Contact Us
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="connect-wallet revealator-slideleft">Connect Wallet</a>
+		</header>
+		<!-- </HEADER> -->
+
+		<!-- <MAIN> -->
+		<main>
+			<section class="hero">
+				<div class="hero-info">
+					<h1 class="hero-header revealator-slideright">
+						Discover a New Era
+						<br>
+						of Crypto Currency
+					</h1>
+					<p class="sub-text revealator-slideright">
+						Panda NFT is the primier marketplace for NFT, which are digital items you can truly own. Digital
+						items
+						have existed for
+						a long time, but never like this.
+					</p>
+					<button type="button" class="button revealator-slideright">Get Started</button>
+				</div>
+				<ul id="hero-slider">
+					<li class="nft-card active revealator-fade">
+						<div class="preview">
+							<img src="./img/hero/card/cards_pre/card1.jpg" alt="nfs image" width="352" height="352"
+								class="preview">
+							<p class="timer">
+								<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18" height="24">
+								<span>05 : 12 : 07 : 45</span>
+							</p>
+						</div>
+						<div class="info">
+							<div class="description">
+								<p class="name">"Hamlet Contemplates ...</p>
+								<p class="protocol">BSC</p>
+							</div>
+							<div class="user-info">
+								<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56" height="56"
+									class="user-icon">
+								<div class="info-list">
+									<ul>
+										<li>creator</li>
+										<li>SlavadorDail</li>
+									</ul>
+									<ul>
+										<li>Current Bid</li>
+										<li>4.89 ETH</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nft-card revealator-fade">
+						<div class="preview">
+							<img src="./img/hero/card/cards_pre/card2.jpg" alt="nfs image" width="352" height="352"
+								class="preview">
+							<p class="timer">
+								<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18" height="24">
+								<span>05 : 12 : 07 : 45</span>
+							</p>
+						</div>
+						<div class="info">
+							<div class="description">
+								<p class="name">"Hamlet Contemplates ...</p>
+								<p class="protocol">BSC</p>
+							</div>
+							<div class="user-info">
+								<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56" height="56"
+									class="user-icon">
+								<div class="info-list">
+									<ul>
+										<li>creator</li>
+										<li>SlavadorDail</li>
+									</ul>
+									<ul>
+										<li>Current Bid</li>
+										<li>4.89 ETH</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="crypto-wallets">
+				<ul class="wallets section-main-row-block">
+					<li class="wallet revealator-slideup">
+						<img src="./img/wallet_section/wallet1.svg" alt="crypto wallet binance">
+					</li>
+					<li class="wallet revealator-slideup">
+						<img src="./img/wallet_section/wallet2.svg" alt="crypto wallet trust wallet">
+					</li>
+					<li class="wallet revealator-slideup">
+						<img src="./img/wallet_section/wallet3.svg" alt="crypto wallet metamask">
+					</li>
+					<li class="wallet revealator-slideup">
+						<img src="./img/wallet_section/wallet4.svg" alt="crypto wallet coinbase">
+					</li>
+					<li class="wallet revealator-slideup">
+						<img src="./img/wallet_section/wallet5.svg" alt="crypto wallet toko crypto">
+					</li>
+				</ul>
+			</section>
+			<section class="sell_nft">
+				<h2>
+					Create and sell your
+					<br>
+					NFTs
+				</h2>
+				<div class="section-content">
+					<ul class="cards section-main-row-block">
+						<li class="card revealator-slideup">
+							<img src="./img/create_sell_nft/placeholder.svg" alt="">
+							<h3>Set up your wallet</h3>
+							<p>
+								Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet
+								icon in the top right corner.
+							</p>
+						</li>
+						<li class="card revealator-slideup">
+							<img src="./img/create_sell_nft/placeholder.svg" alt="">
+							<h3>Add your NFTs</h3>
+							<p>
+								Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet
+								icon in the top right corner.
+							</p>
+						</li>
+						<li class="card revealator-slideup">
+							<img src="./img/create_sell_nft/placeholder.svg" alt="">
+							<h3>List them for sale</h3>
+							<p>
+								Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet
+								icon in the top right corner.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="auction">
+				<div class="header-row-block">
+					<h2>
+						Live Auctions
+					</h2>
+					<a href="#">View more</a>
+				</div>
+				<div class="section-content">
+					<ul class="cards section-main-row-block">
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/auction/cards/img.jpg" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/auction/cards/img2.jpg" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/hero/card/cards_pre/card1.jpg" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="feature">
+				<div class="header-row-block">
+					<h2>Featured Artist</h2>
+					<a href="#">View more</a>
+				</div>
+				<div class="section-content">
+					<ul class="cards section-main-row-block">
+						<li class="card revealator-slideup">
+							<img src="./img/feature/pre/pre1.jpg" alt="preview" class="preview" width="266"
+								height="225">
+							<img src="./img/feature/icons/icon1.jpg" alt="logo" class="logo" width="104" height="104">
+							<p class="name">CryptoPunks</p>
+							<p class="value">
+								<img src="./img/feature/crypto_currancy/eth.svg" alt="currency" width="24" height="24">
+								818.7K
+							</p>
+						</li>
+						<li class="card revealator-slideup">
+							<img src="./img/feature/pre/pre2.jpg" alt="preview" class="preview" width="266"
+								height="225">
+							<img src="./img/feature/icons/icon2.png" alt="logo" class="logo" width="104" height="104">
+							<p class="name">CryptoPunks</p>
+							<p class="value">
+								<img src="./img/feature/crypto_currancy/eth.svg" alt="currency" width="24" height="24">
+								818.7K
+							</p>
+						</li>
+						<li class="card revealator-slideup">
+							<img src="./img/feature/pre/pre3.jpg" alt="preview" class="preview" width="266"
+								height="225">
+							<img src="./img/feature/icons/icon3.jpg" alt="logo" class="logo" width="104" height="104">
+							<p class="name">CryptoPunks</p>
+							<p class="value">
+								<img src="./img/feature/crypto_currancy/eth.svg" alt="currency" width="24" height="24">
+								818.7K
+							</p>
+						</li>
+						<li class="card revealator-slideup">
+							<img src="./img/feature/pre/pre4.jpg" alt="preview" class="preview" width="266"
+								height="225">
+							<img src="./img/feature/icons/icon4.png" alt="logo" class="logo" width="104" height="104">
+							<p class="name">CryptoPunks</p>
+							<p class="value">
+								<img src="./img/feature/crypto_currancy/eth.svg" alt="currency" width="24" height="24">
+								818.7K
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="hot">
+				<div class="header-row-block">
+					<h2>
+						Hot NFTs
+					</h2>
+					<ul class="filters">
+						<li class="filter">
+							<button type="button">Music</button>
+						</li>
+						<li class="filter">
+							<button type="button">Art</button>
+						</li>
+						<li class="filter">
+							<button type="button">Sports</button>
+						</li>
+						<li class="filter">
+							<button type="button">Virtual</button>
+						</li>
+						<li class="filter">
+							<button type="button">Videos</button>
+						</li>
+						<li class="filter">
+							<button type="button">More</button>
+						</li>
+					</ul>
+				</div>
+				<div class="section-content">
+					<ul class="cards section-main-row-block">
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/hot/pre/img1.png" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/hot/pre/img2.png" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/hot/pre/img3.png" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/hero/card/cards_pre/card2.jpg" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/hot/pre/img5.png" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nft-card card revealator-slideup">
+							<div class="preview">
+								<img src="./img/hot/pre/img6.png" alt="nfs image" width="336" height="352"
+									class="preview">
+								<p class="timer">
+									<img src="./img/hero/card/icons/fire.svg" alt="hot proposotion" width="18"
+										height="24">
+									<span>05 : 12 : 07 : 45</span>
+								</p>
+							</div>
+							<div class="info">
+								<div class="description">
+									<p class="name">"Hamlet Contemplates ...</p>
+									<p class="protocol">BSC</p>
+								</div>
+								<div class="user-info">
+									<img src="./img/hero/card/user_icons/icon1.jpg" alt="author icon" width="56"
+										height="56" class="user-icon">
+									<div class="info-list">
+										<ul>
+											<li>creator</li>
+											<li>SlavadorDail</li>
+										</ul>
+										<ul>
+											<li>Current Bid</li>
+											<li>4.89 ETH</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="button">View More</a>
+			</section>
+			<article class="revealator-slideup">
+				<h2>
+					Create Your Own NFT!
+				</h2>
+				<p>
+					We have a large scale group to support each other in this game, Join us to get the news as soon <br>
+					as
+					possible and follow
+					our latest announcements!
+				</p>
+				<a href="">Join Comunity Now</a>
+			</article>
+		</main>
+		<!-- </MAIN> -->
+
+		<!-- <FOOTER> -->
+		<footer class="revealator-fade">
+			<div class="block-list">
+				<div class="li description">
+					<a href="#" class="website-logo">
+						<img src="./img/header/logo.svg" alt="website logo" width="43" height="40">
+						<span class="name">
+							Panda NFT
+						</span>
+					</a>
+					<p>
+						The world`s fіrst and largest digital marketplace for crypto collectibles and non-fungible
+						tokens
+						(NFTs).
+						Buy, sell, and
+						discover exclusive digital items.
+					</p>
+				</div>
+				<div class="li links">
+					<ul>
+						<li>Resources</li>
+						<li><a href="">Help Center</a></li>
+						<li><a href="">Platform Status</a></li>
+						<li><a href="">Partners</a></li>
+						<li><a href="">Gas-Free Marketplace</a></li>
+						<li><a href="">Blog</a></li>
+					</ul>
+					<ul>
+						<li>Company</li>
+						<li><a href="">Our Team</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Career</a></li>
+					</ul>
+					<ul class="contacts">
+						<li>Contact</li>
+						<li>
+							<address>
+								<a href="https://goo.gl/maps/u4wD9WuV7GD5M4Xt7">
+									2715 Ash Dr. San Jose,
+									<br>
+									South Dakota 83475
+								</a>
+							</address>
+						</li>
+						<li class="soc-media">
+							<a href="">
+								<img src="./img/footer/soc-media/facebook.svg" alt="facebook" width="32" height="32">
+							</a>
+							<a href="">
+								<img src="./img/footer/soc-media/twitter.svg" alt="twitter" width="32" height="32">
+							</a>
+							<a href="">
+								<img src="./img/footer/soc-media/instagram.svg" alt="instagram" width="32" height="32">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">2021 All Right Reserved</p>
+		</footer>
+		<!-- </FOOTER> -->
+	</div>
+	<script src="js/hero_slider/hero_slider.js"></script>
+	<script type="text/javascript">
+		// Revealator.scroll_padding = '100';
+		Revealator.effects_padding = '-300';
+		// Revealator. = '-150';
+	</script>
+</body>
+
+</html>

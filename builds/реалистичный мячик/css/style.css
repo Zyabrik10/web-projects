@@ -1,0 +1,24 @@
+body{
+	 background-color: #040404;
+}
+.ball{
+  width: 100px;
+  height: 100px;
+  background-color: #cc3f85;
+  position: absolute;
+  border-radius: 100%;
+  animation: bonce 3s linear infinite,
+             walk-left 30s linear infinite;
+}
+@keyframes bonce {
+	0%{bottom: 100%;}
+	20%{bottom: 0;height: 100px;width: 100px; background: #cc3f85}
+	30%{bottom: 0;height: 25px;width: 110px; background: red;}
+	35%{bottom: 0;height: 100px;width: 100px;}
+	70%{bottom: 100%; background: #cc3f85}
+	100%{bottom: 100%;}
+}
+@keyframes walk-left{
+	0%{left: 0;}
+	100%{left: 100%;}
+}

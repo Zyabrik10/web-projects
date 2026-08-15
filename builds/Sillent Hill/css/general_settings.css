@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+/* <GENERAL>  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    color: #333333;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Sigmar One', cursive;
+    font-style: normal;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+/* scroll-bar */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(90deg, #000, #111, #000);
+}
+
+::-webkit-scrollbar-thumb {
+    background: url("https://www.crushpixel.com/big-static14/preview4/red-vintage-painted-wooden-planks-1511949.jpg");
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+/* /scroll-bar */
+
+.bottom_border {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 40px solid;
+    border-image: linear-gradient(#000, #111, #000) 100% 0%;
+}
+
+/* 
+  </ GENERAL>
+*/

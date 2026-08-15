@@ -1,11 +1,7 @@
 import { Currency } from "@/src/types";
 import { nanoid } from "nanoid";
-import {
-  convertCurrencies,
-  validate,
-  validateCurrency,
-  validateMoney,
-} from "..";
+import { convertCurrency } from "../api";
+import { validateCurrency, validateMoney } from "../account";
 
 export class Transaction {
   public id: string;
@@ -33,11 +29,11 @@ export class Transaction {
     this.date = new Date();
     this.moneyBefore = money;
     try {
-      const convertedMoney = convertCurrencies(
-        transactionValue,
-        transactionCurrency,
+      const convertedMoney = convertCurrency({
+        value: transactionValue,
+        convertCurrency: transactionCurrency,
         currentCurrency,
-      );
+      });
 
       this.moneyAfter = money + convertedMoney;
       this.currentCurrency = currentCurrency;
@@ -59,7 +55,6 @@ export class Transaction {
     transactionCurrency: Currency,
   ) {
     try {
-      validate(money, currentCurrency);
       validateMoney(transactionValue);
       validateCurrency(transactionCurrency);
     } catch (e) {
